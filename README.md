@@ -132,6 +132,14 @@ The API list is curated and maintained at [Free API Explorer](https://github.com
 
 ---
 
+## Support
+
+If this saves you time or helps you build something cool:
+
+[![Donate via PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate?hosted_button_id=XR297MKXBAMBS)
+
+---
+
 ## License
 
 MIT
