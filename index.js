@@ -11,6 +11,10 @@ import {
 import { getToolDefinitions, searchApis, getApiByName } from './lib/tools.js';
 import * as cache from './lib/cache.js';
 
+const log = (message, data = '') => {
+  process.stderr.write(`[${new Date().toISOString()}] ${message} ${data ? JSON.stringify(data) : ''}\n`);
+};
+
 const server = new Server(
   {
     name: 'free-api-mcp',
@@ -33,6 +37,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
 
   if (name === 'search_free_apis') {
+    log('Tool call: search_free_apis', { query: args?.query, category: args?.category });
     const query = typeof args?.query === 'string' ? args.query : '';
     const category = typeof args?.category === 'string' ? args.category : '';
     const results = searchApis(query, category);
@@ -47,6 +52,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 
   if (name === 'free_api_call') {
+    log('Tool call: free_api_call', { api_name: args?.api_name });
     const apiName = typeof args?.api_name === 'string' ? args.api_name : '';
     if (!apiName) {
       throw new McpError(ErrorCode.InvalidParams, 'api_name is required');
@@ -61,20 +67,24 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       throw new McpError(ErrorCode.InvalidParams, `API "${apiName}" not found.${hint}`);
     }
 
-    const params = (args?.params && typeof args.params === 'object') ? args.params : {};
+    const params = (args?.params && typeof args.params === 'object' && !Array.isArray(args.params)) ? args.params : {};
     const url = new URL(api.url);
     Object.entries(params).forEach(([key, value]) => {
-      url.searchParams.set(key, String(value));
+      if (typeof key === 'string') {
+        url.searchParams.set(key, String(value ?? ''));
+      }
     });
 
     const cacheKey = url.toString();
     const cached = cache.get(cacheKey);
     if (cached) {
+      log('Cache hit', { url: cacheKey });
       return {
         content: [{ type: 'text', text: JSON.stringify(cached, null, 2) }]
       };
     }
 
+    log('Fetching API', { url: cacheKey });
     try {
       const response = await fetch(url.toString(), {
         headers: { 'User-Agent': 'free-api-mcp/1.0' },
@@ -99,6 +109,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         content: [{ type: 'text', text: output }]
       };
     } catch (err) {
+      log('Request failed', { error: err.message });
       if (err instanceof McpError) throw err;
       throw new McpError(
         ErrorCode.InternalError,

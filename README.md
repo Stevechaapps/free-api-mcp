@@ -2,6 +2,8 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/Stevechaapps/free-api-mcp?style=flat-square&logo=github)](https://github.com/Stevechaapps/free-api-mcp/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
+[![CI](https://github.com/Stevechaapps/free-api-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Stevechaapps/free-api-mcp/actions/workflows/ci.yml)
+[![MCP](https://img.shields.io/badge/MCP-server-purple?style=flat-square)](https://modelcontextprotocol.io)
 
 **305 free APIs, zero authentication, now accessible to any AI agent.**
 
@@ -131,6 +133,38 @@ The server runs as a local child process on your machine. All API calls go direc
 The API list is curated and maintained at [Free API Explorer](https://github.com/Stevechaapps/api-explorer) — a static directory of 305 verified no-auth APIs with documentation, code examples, and use cases.
 
 ---
+## Contributing
+
+Contributions are welcome! Here's how you can help:
+
+- **Add new APIs** — Found a great free API? Add it to the [api-explorer](https://github.com/Stevechaapps/api-explorer) dataset.
+- **Bug reports** — Open an issue with steps to reproduce.
+- **Feature requests** — Have an idea? Open a discussion or issue.
+- **Pull requests** — Fork the repo, create a branch, and submit a PR.
+
+### Development
+
+```bash
+git clone https://github.com/Stevechaapps/free-api-mcp.git
+cd free-api-mcp
+npm install
+node --check index.js        # Verify syntax
+node --check lib/tools.js
+node --check lib/cache.js
+```
+
+## Roadmap
+
+- [x] 305 free no-auth APIs
+- [x] MCP stdio transport
+- [x] In-memory caching with TTL
+- [x] Exact + fuzzy API matching
+- [x] CI pipeline
+- [ ] Resource exposure for static API data
+- [ ] JSON validation with Zod
+- [ ] Streaming transport support
+- [ ] Docker support
+
 
 ## Support
 
