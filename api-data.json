@@ -1,0 +1,3973 @@
+{
+  "apis": [
+    {
+      "name": "Open-Meteo Weather",
+      "description": "Free weather forecast API with no authentication required. Provides current weather, forecasts, and historical data for worldwide locations.",
+      "url": "https://api.open-meteo.com/v1/forecast",
+      "category": "weather",
+      "documentation": "https://open-meteo.com/en/docs",
+      "example": "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m",
+      "authRequired": false,
+      "notes": "Completely free, no rate limits for reasonable usage, no signup required",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open-Meteo Geocoding",
+      "description": "Convert city names to GPS coordinates. Use this first, then plug the coordinates into Open-Meteo Weather API. Same provider, free, no API key.",
+      "url": "https://geocoding-api.open-meteo.com/v1/search",
+      "category": "geocoding",
+      "documentation": "https://open-meteo.com/en/docs/geocoding",
+      "example": "https://geocoding-api.open-meteo.com/v1/search?name=Los+Angeles&count=1",
+      "authRequired": false,
+      "notes": "Pairs perfectly with Open-Meteo Weather - search for city first, then get weather",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Frankfurter Currency Exchange",
+      "description": "Free foreign exchange rates API based on the European Central Bank data. No authentication required.",
+      "url": "https://api.frankfurter.app",
+      "category": "finance",
+      "documentation": "https://www.frankfurter.app/",
+      "example": "https://api.frankfurter.app/latest?from=USD&to=EUR",
+      "authRequired": false,
+      "notes": "Free, no signup, based on ECB data, updates daily",
+      "worksIn": [
+        "EU"
+      ]
+    },
+    {
+      "name": "Czech National Bank",
+      "description": "Daily exchange rates from the Czech National Bank.",
+      "url": "https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.xml",
+      "category": "finance",
+      "documentation": "https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/kurzy_devizoveho_trhu/",
+      "example": "https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.xml",
+      "authRequired": false,
+      "notes": "Free, no signup, XML format, updates daily",
+      "worksIn": [
+        "CZ"
+      ]
+    },
+    {
+      "name": "UUIDTools",
+      "description": "Generate UUIDs (GUIDs) in various versions. Free API with no authentication required.",
+      "url": "https://www.uuidtools.com/api/generate/v1",
+      "category": "utility",
+      "documentation": "https://www.uuidtools.com/",
+      "example": "https://www.uuidtools.com/api/generate/v1",
+      "authRequired": false,
+      "notes": "Generates UUID v1 by default, other versions available",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "User Agent String",
+      "description": "Parse and get information about user agent strings. Free API for detecting browser, OS, device info.",
+      "url": "http://www.useragentstring.com/pages/useragentstring.php",
+      "category": "developer",
+      "documentation": "http://www.useragentstring.com/",
+      "example": "http://www.useragentstring.com/?uas=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36&getJSON=all",
+      "authRequired": false,
+      "notes": "Returns JSON with browser, OS, device information",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Date.nager.at Holidays",
+      "description": "API for public holidays, bank holidays, and school holidays for many countries. No authentication required.",
+      "url": "https://date.nager.at/api/v3",
+      "category": "date",
+      "documentation": "https://date.nager.at/",
+      "example": "https://date.nager.at/api/v3/PublicHolidays/2026/US",
+      "authRequired": false,
+      "notes": "Free, covers many countries, no signup required",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "JSONPlaceholder",
+      "description": "Free fake REST API for testing and prototyping. Provides endpoints for posts, comments, albums, photos, todos, users.",
+      "url": "https://jsonplaceholder.typicode.com",
+      "category": "development",
+      "documentation": "https://jsonplaceholder.typicode.com/",
+      "example": "https://jsonplaceholder.typicode.com/posts/1",
+      "authRequired": false,
+      "notes": "Great for testing, returns fake but structured data",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Cat Facts",
+      "description": "Daily random cat facts. Free API with no authentication required.",
+      "url": "https://catfact.ninja/fact",
+      "category": "fun",
+      "documentation": "https://catfact.ninja/",
+      "example": "https://catfact.ninja/fact",
+      "authRequired": false,
+      "notes": "Returns a random cat fact in JSON format",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Dog CEO",
+      "description": "API for random dog images. Free, no authentication required.",
+      "url": "https://dog.ceo/dog-api/",
+      "category": "fun",
+      "documentation": "https://dog.ceo/dog-api/",
+      "example": "https://dog.ceo/api/breeds/image/random",
+      "authRequired": false,
+      "notes": "Returns random dog image URLs",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Advice Slip",
+      "description": "Free API for getting random advice slips. No authentication required.",
+      "url": "https://api.adviceslip.com",
+      "category": "fun",
+      "documentation": "https://api.adviceslip.com/",
+      "example": "https://api.adviceslip.com/advice",
+      "authRequired": false,
+      "notes": "Returns random advice slips in JSON format",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Universities.hipolabs.com",
+      "description": "Search for universities and colleges by name or country. Free API with no authentication required.",
+      "url": "http://universities.hipolabs.com/",
+      "category": "education",
+      "documentation": "http://universities.hipolabs.com/",
+      "example": "http://universities.hipolabs.com/search?country=United+States",
+      "authRequired": false,
+      "notes": "Search universities by name or country",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "App Brewery Mocktail",
+      "description": "Free API for cocktail recipes and drink information. No authentication required.",
+      "url": "https://www.thecocktaildb.com/api.php",
+      "category": "food",
+      "documentation": "https://www.thecocktaildb.com/api.php",
+      "example": "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita",
+      "authRequired": false,
+      "notes": "Free cocktail database API",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "CoinGecko",
+      "description": "Comprehensive cryptocurrency data including prices, market cap, and volume.",
+      "url": "https://api.coingecko.com/api/v3",
+      "category": "finance",
+      "documentation": "https://www.coingecko.com/en/api/documentation",
+      "example": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd",
+      "authRequired": false,
+      "notes": "Demo plan has rate limits. Use API key for higher limits.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Coinlore",
+      "description": "Cryptocurrency prices, volume and more",
+      "url": "https://www.coinlore.com/cryptocurrency-data-api",
+      "category": "finance",
+      "documentation": "https://www.coinlore.com/cryptocurrency-data-api",
+      "example": "https://api.coinlore.com/api/price/?id=90",
+      "authRequired": false,
+      "notes": "Free cryptocurrency data API",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Coinpaprika",
+      "description": "Cryptocurrency prices, volume and more",
+      "url": "https://api.coinpaprika.com",
+      "category": "finance",
+      "documentation": "https://api.coinpaprika.com",
+      "example": "https://api.coinpaprika.com/v1/coins",
+      "authRequired": false,
+      "notes": "Free cryptocurrency data API",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "PokeAPI",
+      "description": "All the Pokemon data you'll ever need.",
+      "url": "https://pokeapi.co/api/v2",
+      "category": "fun",
+      "documentation": "https://pokeapi.co/",
+      "example": "https://pokeapi.co/api/v2/pokemon/ditto",
+      "authRequired": false,
+      "notes": "Extremely stable; highly detailed dataset.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "REST Countries",
+      "description": "Get information about countries, regions, and cities.",
+      "url": "https://restcountries.com/v3.1",
+      "category": "data",
+      "documentation": "https://restcountries.com/",
+      "example": "https://restcountries.com/v3.1/name/usa",
+      "authRequired": false,
+      "notes": "Public domain data; no authentication needed.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "The Joke API",
+      "description": "Programmer jokes and general jokes.",
+      "url": "https://v2.jokeapi.dev",
+      "category": "fun",
+      "documentation": "https://sv443.net/jokeapi/v2/",
+      "example": "https://v2.jokeapi.dev/joke/Programming?type=single",
+      "authRequired": false,
+      "notes": "Supports filtering by category and safety.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Zippopotam.us",
+      "description": "Zip code to location information.",
+      "url": "https://api.zippopotam.us",
+      "category": "data",
+      "documentation": "http://www.zippopotam.us/",
+      "example": "https://api.zippopotam.us/us/90210",
+      "authRequired": false,
+      "notes": "Very fast, simple key-value lookup.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open Library API",
+      "description": "Open and free library of books",
+      "url": "https://openlibrary.org",
+      "category": "books",
+      "documentation": "https://openlibrary.org/dev/docs/api",
+      "example": "https://openlibrary.org/works/OL12345W.json",
+      "authRequired": false,
+      "notes": "Great for bibliographic data",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Rick and Morty API",
+      "description": "Data from the Rick and Morty TV show",
+      "url": "https://rickandmortyapi.com/api",
+      "category": "entertainment",
+      "documentation": "https://rickandmortyapi.com/documentation",
+      "example": "https://rickandmortyapi.com/api/character/1",
+      "authRequired": false,
+      "notes": "RESTful and well-documented",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "NASA Open APIs",
+      "description": "Space and planetary data",
+      "url": "https://api.nasa.gov",
+      "category": "space",
+      "documentation": "https://api.nasa.gov/",
+      "example": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
+      "authRequired": false,
+      "notes": "DEMO_KEY works for basic use",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Dicebear Avatars",
+      "description": "Generate random pixel-art avatars",
+      "url": "https://avatars.dicebear.com/",
+      "category": "development",
+      "documentation": "https://avatars.dicebear.com/",
+      "example": "https://avatars.dicebear.com/7.x/pixel-art/svg",
+      "authRequired": false,
+      "notes": "Free, no auth required.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Agify.io",
+      "description": "Predict age based on name",
+      "url": "https://api.agify.io",
+      "category": "ai",
+      "documentation": "https://agify.io",
+      "example": "https://api.agify.io/?name=bella",
+      "authRequired": false,
+      "notes": "Simple prediction API",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Genderize.io",
+      "description": "Predict gender based on name",
+      "url": "https://api.genderize.io",
+      "category": "ai",
+      "documentation": "https://genderize.io",
+      "example": "https://api.genderize.io/?name=peter",
+      "authRequired": false,
+      "notes": "Simple prediction API",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Nationalize.io",
+      "description": "Predict nationality based on name",
+      "url": "https://api.nationalize.io",
+      "category": "ai",
+      "documentation": "https://nationalize.io",
+      "example": "https://api.nationalize.io/?name=smith",
+      "authRequired": false,
+      "notes": "Simple prediction API",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open Trivia DB",
+      "description": "Quiz questions for games",
+      "url": "https://opentdb.com/api.php",
+      "category": "games",
+      "documentation": "https://opentdb.com/api",
+      "example": "https://opentdb.com/api.php?amount=10",
+      "authRequired": false,
+      "notes": "Perfect for trivia apps",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Jikan API",
+      "description": "Unofficial MyAnimeList API",
+      "url": "https://api.jikan.moe/v4",
+      "category": "entertainment",
+      "documentation": "https://jikan.moe/docs",
+      "example": "https://api.jikan.moe/v4/anime/1",
+      "authRequired": false,
+      "notes": "Strict rate limits",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "TheSportsDB",
+      "description": "A massive open database of sports data including players, teams, and leagues.",
+      "url": "https://www.thesportsdb.com/api/v1/json/3",
+      "category": "sports",
+      "documentation": "https://www.thesportsdb.com/api.php",
+      "example": "https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Arsenal",
+      "authRequired": false,
+      "notes": "Free tier uses API key '3' for development.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Scorebat Video API",
+      "description": "Provides free access to football video highlights and live scores.",
+      "url": "https://www.scorebat.com/api/api-now/",
+      "category": "sports",
+      "documentation": "https://www.scorebat.com/api/",
+      "example": "https://www.scorebat.com/api/api-now/",
+      "authRequired": false,
+      "notes": "Completely free, no authentication required.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "openFDA",
+      "description": "Publicly available data from the US FDA regarding drugs, devices, and food recalls.",
+      "url": "https://api.fda.gov",
+      "category": "health",
+      "documentation": "https://open.fda.gov/apis/",
+      "example": "https://api.fda.gov/drug/label.json",
+      "authRequired": false,
+      "notes": "Completely open, no API key required for basic usage.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "openFDA Animal & Veterinary",
+      "description": "Publicly available data from the US FDA regarding animal and veterinary drug adverse events.",
+      "url": "https://api.fda.gov/animalandveterinary",
+      "category": "health",
+      "documentation": "https://open.fda.gov/apis/animalandveterinary/",
+      "example": "https://api.fda.gov/animalandveterinary/event.json",
+      "authRequired": false,
+      "notes": "Completely open, specifically for veterinary drug events.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "World Bank Open Data",
+      "description": "Global economic and development indicators from the World Bank.",
+      "url": "https://api.worldbank.org/v2",
+      "category": "government",
+      "documentation": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589",
+      "example": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json",
+      "authRequired": false,
+      "notes": "Extremely stable, no API key needed for data retrieval.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "openFDA Cosmetics",
+      "description": "Publicly available data from the US FDA regarding cosmetic product adverse events.",
+      "url": "https://api.fda.gov/cosmetic",
+      "category": "health",
+      "documentation": "https://open.fda.gov/apis/cosmetic/",
+      "example": "https://api.fda.gov/cosmetic/event.json",
+      "authRequired": false,
+      "notes": "Completely open, no API key required.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "Amazing Endemic Species",
+      "description": "Amazing endemic species all over the world",
+      "url": "https://aes.shenlu.me",
+      "category": "animals",
+      "documentation": "https://aes.shenlu.me",
+      "example": "https://aes.shenlu.me",
+      "authRequired": false,
+      "notes": "Free, no authentication required.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Cataas",
+      "description": "Cat as a service (cats pictures and gifs)",
+      "url": "https://cataas.com/",
+      "category": "animals",
+      "documentation": "https://cataas.com/",
+      "example": "https://cataas.com/cat",
+      "authRequired": false,
+      "notes": "Free cat images and GIFs API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Dog API",
+      "description": "Fun facts on dog breeds and groups",
+      "url": "https://dogapi.dog",
+      "category": "animals",
+      "documentation": "https://dogapi.dog",
+      "example": "https://dogapi.dog/api/v1/breeds/list/all",
+      "authRequired": false,
+      "notes": "Free dog breed facts and data.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "HTTP Dogs",
+      "description": "Dogs for every HTTP status code",
+      "url": "https://http.dog/",
+      "category": "development",
+      "documentation": "https://http.dog/",
+      "example": "https://http.dog/200.jpg",
+      "authRequired": false,
+      "notes": "Fun API for HTTP status code images.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "HTTPCat",
+      "description": "Cat for every HTTP Status",
+      "url": "https://http.cat/",
+      "category": "development",
+      "documentation": "https://http.cat/",
+      "example": "https://http.cat/200.jpg",
+      "authRequired": false,
+      "notes": "Fun API for HTTP status code cat images.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "RandomDog",
+      "description": "Random pictures of dogs",
+      "url": "https://random.dog/woof.json",
+      "category": "animals",
+      "documentation": "https://random.dog/",
+      "example": "https://random.dog/woof.json",
+      "authRequired": false,
+      "notes": "Returns random dog image URLs.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "RandomFox",
+      "description": "Random pictures of foxes",
+      "url": "https://randomfox.ca/floof/",
+      "category": "animals",
+      "documentation": "https://randomfox.ca/",
+      "example": "https://randomfox.ca/floof/",
+      "authRequired": false,
+      "notes": "Returns random fox images.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "AnimeNewsNetwork",
+      "description": "Anime industry news",
+      "url": "https://www.animenewsnetwork.com/encyclopedia/api.php",
+      "category": "entertainment",
+      "documentation": "https://www.animenewsnetwork.com/encyclopedia/api.php",
+      "example": "https://cdn.myanimelist.net/xml/animelist.xml",
+      "authRequired": false,
+      "notes": "Free anime database and news.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "AOT Quotes",
+      "description": "Attack on Titan Quotes API",
+      "url": "https://attackontitanquotes.vercel.app/",
+      "category": "entertainment",
+      "documentation": "https://attackontitanquotes.vercel.app/",
+      "example": "https://attackontitanquotes.vercel.app/api/random",
+      "authRequired": false,
+      "notes": "Free quotes from Attack on Titan.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Nekosia API",
+      "description": "Anime API with cute random images",
+      "url": "https://nekosia.cat",
+      "category": "entertainment",
+      "documentation": "https://nekosia.cat",
+      "example": "https://nekosia.cat/api/v1/images/random",
+      "authRequired": false,
+      "notes": "Free anime images API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Metropolitan Museum of Art",
+      "description": "Art from the Met collection",
+      "url": "https://metmuseum.github.io/",
+      "category": "art",
+      "documentation": "https://metmuseum.github.io/",
+      "example": "https://collectionapi.metmuseum.org/public/collection/v1/objects/1",
+      "authRequired": false,
+      "notes": "Free art collection API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Harry Potter API",
+      "description": "API to get data from Harry Potter books, movies, characters and spells",
+      "url": "https://github.com/fedeperin/potterapi",
+      "category": "entertainment",
+      "documentation": "https://github.com/fedeperin/potterapi",
+      "example": "https://potterapi-fedeperin.vercel.app/en/characters",
+      "authRequired": false,
+      "notes": "Free Harry Potter data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Domainsdb.info",
+      "description": "Registered Domain Names Search",
+      "url": "https://domainsdb.info/",
+      "category": "data",
+      "documentation": "https://domainsdb.info/",
+      "example": "https://domainsdb.info/en/search?query=google",
+      "authRequired": false,
+      "notes": "Free domain name search.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Favicon.im",
+      "description": "Instantly fetch and display the favicon for any website",
+      "url": "https://favicon.im",
+      "category": "development",
+      "documentation": "https://favicon.im",
+      "example": "https://favicon.im/https://google.com",
+      "authRequired": false,
+      "notes": "Free favicon fetching API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Markbase",
+      "description": "Search 14M+ USPTO trademarks with fuzzy search and autocomplete",
+      "url": "https://markbase.co",
+      "category": "business",
+      "documentation": "https://markbase.co",
+      "example": "https://markbase.co/api/search?query=apple",
+      "authRequired": false,
+      "notes": "Free trademark search API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Byabbe",
+      "description": "Search histories from Wikipedia for a particular day",
+      "url": "https://byabbe.se/on-this-day/",
+      "category": "date",
+      "documentation": "https://byabbe.se/on-this-day/",
+      "example": "https://byabbe.se/on-this-day/6/15/events.json",
+      "authRequired": false,
+      "notes": "Free historical events by date.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Non-working Days",
+      "description": "Simple API for checking working, non-working or short days for Russia, Ukraine, Belarus and Kazakhstan",
+      "url": "https://isdayoff.ru",
+      "category": "date",
+      "documentation": "https://isdayoff.ru",
+      "example": "https://isdayoff.ru/2026/06/15",
+      "authRequired": false,
+      "notes": "Free calendar API for Slavic countries.",
+      "worksIn": [
+        "RU",
+        "UA",
+        "BY",
+        "KZ"
+      ]
+    },
+    {
+      "name": "Blockchain",
+      "description": "Bitcoin Payment, Wallet & Transaction Data",
+      "url": "https://www.blockchain.info/api",
+      "category": "finance",
+      "documentation": "https://www.blockchain.info/api",
+      "example": "https://blockchain.info/ticker",
+      "authRequired": false,
+      "notes": "Free Bitcoin data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "ratesapi",
+      "description": "Free exchange rates and historical rates",
+      "url": "https://ratesapi.io",
+      "category": "finance",
+      "documentation": "https://ratesapi.io",
+      "example": "https://ratesapi.io/api/latest?base=USD",
+      "authRequired": false,
+      "notes": "Free currency exchange rates API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "languagelayer",
+      "description": "Language detection",
+      "url": "https://languagelayer.com",
+      "category": "data",
+      "documentation": "https://languagelayer.com",
+      "example": "https://languagelayer.com/api/detect?query=hello%20world",
+      "authRequired": false,
+      "notes": "Free language detection API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "mailboxlayer",
+      "description": "Email address validation",
+      "url": "https://mailboxlayer.com",
+      "category": "data",
+      "documentation": "https://mailboxlayer.com",
+      "example": "https://apilayer.net/api/check?access_key=free@demo.com&email=test@test.com",
+      "authRequired": false,
+      "notes": "Free email validation API (limited free tier).",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "NumValidate",
+      "description": "Open Source phone number validation",
+      "url": "https://numvalidate.com",
+      "category": "data",
+      "documentation": "https://numvalidate.com",
+      "example": "https://numvalidate.com/api/validate?number=14155252786&type=tel",
+      "authRequired": false,
+      "notes": "Free phone number validation.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "numverify",
+      "description": "Phone number validation",
+      "url": "https://numverify.com",
+      "category": "data",
+      "documentation": "https://numverify.com",
+      "example": "https://numverify.com/documentation",
+      "authRequired": false,
+      "notes": "Free phone number validation.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "vatlayer",
+      "description": "VAT number validation",
+      "url": "https://vatlayer.com",
+      "category": "data",
+      "documentation": "https://vatlayer.com",
+      "example": "https://vatlayer.net/api/validate?access_key=free@demo.com&vat_number=DE123456789",
+      "authRequired": false,
+      "notes": "Free VAT number validation.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "24 Pull Requests",
+      "description": "Project to promote open source collaboration during December",
+      "url": "https://24pullrequests.com/api",
+      "category": "development",
+      "documentation": "https://24pullrequests.com/api",
+      "example": "https://24pullrequests.com/api/projects",
+      "authRequired": false,
+      "notes": "Free open source projects API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "AgentDeals",
+      "description": "Search and compare developer free tiers, startup credits, and pricing changes",
+      "url": "https://agentdeals.dev/api",
+      "category": "development",
+      "documentation": "https://agentdeals.dev/api",
+      "example": "https://agentdeals.dev/api",
+      "authRequired": false,
+      "notes": "Free developer deals API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "API Status Check",
+      "description": "Real-time status monitoring for 270+ APIs and services",
+      "url": "https://apistatuscheck.com/api/status",
+      "category": "development",
+      "documentation": "https://apistatuscheck.com/api/status",
+      "example": "https://apistatuscheck.com/api/status",
+      "authRequired": false,
+      "notes": "Free API status monitoring.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "ArulJohn.com IP",
+      "description": "A simple IP Address API in JSON",
+      "url": "https://api.aruljohn.com/ip/json",
+      "category": "development",
+      "documentation": "https://api.aruljohn.com",
+      "example": "https://api.aruljohn.com/ip/8.8.8.8",
+      "authRequired": false,
+      "notes": "Free IP address lookup API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Corsfix",
+      "description": "CORS Proxy by Corsfix lets you instantly fetch any resource on the web and bypass CORS errors",
+      "url": "https://corsfix.com",
+      "category": "development",
+      "documentation": "https://corsfix.com",
+      "example": "https://corsfix.com/?url=https://example.com",
+      "authRequired": false,
+      "notes": "Free CORS proxy service.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "DigitalOcean Status",
+      "description": "Status of all DigitalOcean services",
+      "url": "https://status.digitalocean.com/api/v2",
+      "category": "development",
+      "documentation": "https://status.digitalocean.com",
+      "example": "https://status.digitalocean.com/api/v2/summary",
+      "authRequired": false,
+      "notes": "Free service status API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "DownStatus",
+      "description": "Real-time status for GitHub, AWS, Discord and 90+ services",
+      "url": "https://isitdownstatus.com",
+      "category": "development",
+      "documentation": "https://isitdownstatus.com",
+      "example": "https://isitdownstatus.com/api/status/github",
+      "authRequired": false,
+      "notes": "Free service status API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "ExtendsClass JSON Store",
+      "description": "A simple JSON store API",
+      "url": "https://extendsclass.com/json-storage.html",
+      "category": "development",
+      "documentation": "https://extendsclass.com/json-storage.html",
+      "example": "https://extendsclass.com/api/json-storage/put",
+      "authRequired": false,
+      "notes": "Free JSON storage API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "FontDownloader",
+      "description": "A hassle free API for managing web fonts provided by Google Fonts",
+      "url": "https://fontdownloader.org/#API",
+      "category": "design",
+      "documentation": "https://fontdownloader.org/#API",
+      "example": "https://fontdownloader.org/api?font=Roboto",
+      "authRequired": false,
+      "notes": "Free Google Fonts API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "GoQR",
+      "description": "Generate and decode / read QR code graphics",
+      "url": "http://goqr.me/api/",
+      "category": "development",
+      "documentation": "http://goqr.me/api/",
+      "example": "http://goqr.me/api/qrdata?text=hello&size=100x100",
+      "authRequired": false,
+      "notes": "Free QR code generator API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "HTTP2.Pro",
+      "description": "Test endpoints for client and server HTTP/2 protocol support",
+      "url": "https://http2.pro/doc/api",
+      "category": "development",
+      "documentation": "https://http2.pro/doc/api",
+      "example": "https://http2.pro/api/v1/check",
+      "authRequired": false,
+      "notes": "Free HTTP/2 test API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Image-Charts",
+      "description": "Generate charts, QR codes and graph images",
+      "url": "https://www.image-charts.com/",
+      "category": "development",
+      "documentation": "https://www.image-charts.com/",
+      "example": "https://image-charts.com/chart?cht=lc&chs=300x100&chd=s:abcdefgh",
+      "authRequired": false,
+      "notes": "Free chart image generation API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "IPGEO",
+      "description": "Unlimited free IP Address API with useful information",
+      "url": "https://api.techniknews.net/ipgeo/",
+      "category": "development",
+      "documentation": "https://api.techniknews.net/ipgeo/",
+      "example": "https://api.techniknews.net/ipgeo/8.8.8.8",
+      "authRequired": false,
+      "notes": "Free IP geolocation API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "IPinfo",
+      "description": "Another simple IP Address API",
+      "url": "https://ipinfo.io",
+      "category": "development",
+      "documentation": "https://ipinfo.io/developers",
+      "example": "https://ipinfo.io/8.8.8.8/json",
+      "authRequired": false,
+      "notes": "Free IP information API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "File.io",
+      "description": "File Sharing And Storage - upload and download files",
+      "url": "https://www.file.io",
+      "category": "storage",
+      "documentation": "https://www.file.io",
+      "example": "https://file.io",
+      "authRequired": false,
+      "notes": "Free file storage API. Files deleted after first download.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open Brewery DB",
+      "description": "Free brewery and beer data",
+      "url": "https://www.openbrewerydb.org",
+      "category": "food",
+      "documentation": "https://www.openbrewerydb.org",
+      "example": "https://api.openbrewerydb.org/breweries",
+      "authRequired": false,
+      "notes": "Free brewery database API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open Food Facts",
+      "description": "Open food facts database - ingredients, nutrition, additives",
+      "url": "https://world.openfoodfacts.org/data",
+      "category": "food",
+      "documentation": "https://world.openfoodfacts.org/data",
+      "example": "https://world.openfoodfacts.org/api/v0/product/737628064502.json",
+      "authRequired": false,
+      "notes": "Free open food database API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "WhiskyHunter",
+      "description": "Free whisky auction data",
+      "url": "https://whiskyhunter.net/api/",
+      "category": "food",
+      "documentation": "https://whiskyhunter.net/api/",
+      "example": "https://whiskyhunter.net/api/v1/auctions/",
+      "authRequired": false,
+      "notes": "Free whisky auction data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Carbon Intensity API",
+      "description": "UK Carbon Intensity data from National Grid",
+      "url": "https://carbon-intensity.github.io/api-definitions/",
+      "category": "environment",
+      "documentation": "https://carbon-intensity.github.io/api-definitions/",
+      "example": "https://api.carbonintensity.org.uk/intensity",
+      "authRequired": false,
+      "notes": "Free carbon intensity API for the UK.",
+      "worksIn": [
+        "GB"
+      ]
+    },
+    {
+      "name": "Razorpay IFSC",
+      "description": "Indian Bank IFSC Code lookup",
+      "url": "https://ifsc.razorpay.com/",
+      "category": "finance",
+      "documentation": "https://ifsc.razorpay.com/",
+      "example": "https://ifsc.razorpay.com/SBIN0RTKGB",
+      "authRequired": false,
+      "notes": "Free Indian bank IFSC lookup API.",
+      "worksIn": [
+        "IN"
+      ]
+    },
+    {
+      "name": "Statistics of the World",
+      "description": "Statistical data from around the world",
+      "url": "https://statisticsoftheworld.com",
+      "category": "data",
+      "documentation": "https://statisticsoftheworld.com/api-docs",
+      "example": "https://statisticsoftheworld.com/api/v1/country/all",
+      "authRequired": false,
+      "notes": "Free statistics database API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Postcodes.io",
+      "description": "UK postcode lookup and geocoding",
+      "url": "https://postcodes.io",
+      "category": "geocoding",
+      "documentation": "https://postcodes.io",
+      "example": "https://postcodes.io/postcodes/SE14EG",
+      "authRequired": false,
+      "notes": "Free UK postcode lookup API.",
+      "worksIn": [
+        "GB"
+      ]
+    },
+    {
+      "name": "ViaCep",
+      "description": "Brazilian postal code lookup",
+      "url": "https://viacep.com.br",
+      "category": "geocoding",
+      "documentation": "https://viacep.com.br",
+      "example": "https://viacep.com.br/ws/01310994/json/",
+      "authRequired": false,
+      "notes": "Free Brazilian postcode lookup API.",
+      "worksIn": [
+        "BR"
+      ]
+    },
+    {
+      "name": "ip-api.com",
+      "description": "IP geolocation lookup",
+      "url": "http://ip-api.com/",
+      "category": "geocoding",
+      "documentation": "http://ip-api.com/docs/",
+      "example": "http://ip-api.com/json/8.8.8.8",
+      "authRequired": false,
+      "notes": "Free IP geolocation API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "HelloSalut",
+      "description": "Get translations for greetings in different languages",
+      "url": "https://www.fourtonfish.com/hellosalut/hello/",
+      "category": "data",
+      "documentation": "https://www.fourtonfish.com/hellosalut/hello/",
+      "example": "https://www.fourtonfish.com/hellosalut/hello/?lang=fr",
+      "authRequired": false,
+      "notes": "Free translation/greetings API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "MusicBrainz",
+      "description": "Music metadata database - artists, albums, tracks, tags",
+      "url": "https://musicbrainz.org/ws/2/",
+      "category": "music",
+      "documentation": "https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2",
+      "example": "https://musicbrainz.org/ws/2/artist/?query=beatles&fmt=json",
+      "authRequired": false,
+      "notes": "Free, open source music metadata database.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Genrenator",
+      "description": "Random music genre generator",
+      "url": "https://binaryjazz.us/genrenator-api/",
+      "category": "music",
+      "documentation": "https://binaryjazz.us/genrenator-api/",
+      "example": "https://binaryjazz.us/genrenator-api/",
+      "authRequired": false,
+      "notes": "Free random genre generator API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Chuck Norris Jokes",
+      "description": "Random Chuck Norris jokes",
+      "url": "https://api.chucknorris.io/jokes/random",
+      "category": "fun",
+      "documentation": "https://api.chucknorris.io",
+      "example": "https://api.chucknorris.io/jokes/random",
+      "authRequired": false,
+      "notes": "Free Chuck Norris jokes API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Evil Insult Generator",
+      "description": "Generate evil insults",
+      "url": "https://evilinsult.com/api",
+      "category": "fun",
+      "documentation": "https://evilinsult.com/api",
+      "example": "https://evilinsult.com/api?type=json",
+      "authRequired": false,
+      "notes": "Free evil insults API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Yes No WTF",
+      "description": "Random yes/no answers with GIFs",
+      "url": "https://yesno.wtf/api",
+      "category": "fun",
+      "documentation": "https://yesno.wtf",
+      "example": "https://yesno.wtf/api",
+      "authRequired": false,
+      "notes": "Free yes/no random answer API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "icanhazdadjoke",
+      "description": "Random dad jokes",
+      "url": "https://icanhazdadjoke.com/api",
+      "category": "fun",
+      "documentation": "https://icanhazdadjoke.com/api",
+      "example": "https://icanhazdadjoke.com/",
+      "authRequired": false,
+      "notes": "Free dad jokes API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "kanye.rest",
+      "description": "Random Kanye West quotes",
+      "url": "https://kanye.rest",
+      "category": "fun",
+      "documentation": "https://kanye.rest",
+      "example": "https://kanye.rest",
+      "authRequired": false,
+      "notes": "Free Kanye quotes API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Quotes on Design",
+      "description": "Random design quotes",
+      "url": "https://quotesondesign.com/api/",
+      "category": "lifestyle",
+      "documentation": "https://quotesondesign.com/api/",
+      "example": "https://quotesondesign.com/api/quotes",
+      "authRequired": false,
+      "notes": "Free design quotes API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Free Dictionary API",
+      "description": "English dictionary with definitions, phonetics, examples",
+      "url": "https://api.dictionaryapi.dev/api/v2/entries/en/",
+      "category": "education",
+      "documentation": "https://dictionaryapi.dev/",
+      "example": "https://api.dictionaryapi.dev/api/v2/entries/en/hello",
+      "authRequired": false,
+      "notes": "Free dictionary API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Archive.org",
+      "description": "Digital library of internet artifacts",
+      "url": "https://archive.org",
+      "category": "data",
+      "documentation": "https://archive.readme.io/docs",
+      "example": "https://archive.org/advancedsearch.php?q=apple&output=json",
+      "authRequired": false,
+      "notes": "Free digital archive API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "RandomUser",
+      "description": "Generate random user data for testing",
+      "url": "https://randomuser.me",
+      "category": "development",
+      "documentation": "https://randomuser.me",
+      "example": "https://randomuser.me/api/",
+      "authRequired": false,
+      "notes": "Free fake user data API for testing.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "RoboHash",
+      "description": "Generate robot images from text",
+      "url": "https://robohash.org/",
+      "category": "development",
+      "documentation": "https://robohash.org",
+      "example": "https://robohash.org/test?set=set1",
+      "authRequired": false,
+      "notes": "Free robot image generation API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Lorem Picsum",
+      "description": "Random placeholder images",
+      "url": "https://picsum.photos/",
+      "category": "development",
+      "documentation": "https://picsum.photos",
+      "example": "https://picsum.photos/200/300",
+      "authRequired": false,
+      "notes": "Free placeholder image API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Sunrise and Sunset",
+      "description": "Sunrise and sunset times for any location",
+      "url": "https://sunrise-sunset.org/api",
+      "category": "science",
+      "documentation": "https://sunrise-sunset.org/api",
+      "example": "https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400",
+      "authRequired": false,
+      "notes": "Free sunrise/sunset API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "ICD-10 Codes",
+      "description": "International Classification of Diseases codes lookup",
+      "url": "https://clinicaltables.nlm.nih.gov/apidoc/icd10cm/v3/doc.html",
+      "category": "health",
+      "documentation": "https://clinicaltables.nlm.nih.gov/apidoc/icd10cm/v3/doc.html",
+      "example": "https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?terms=diabetes",
+      "authRequired": false,
+      "notes": "Free medical codes API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "NPPES NPI Registry",
+      "description": "US Healthcare provider registry",
+      "url": "https://npiregistry.cms.hhs.gov/registry/help-api",
+      "category": "health",
+      "documentation": "https://npiregistry.cms.hhs.gov/registry/help-api",
+      "example": "https://npiregistry.cms.hhs.gov/api/?number=1234567890&version=2.1",
+      "authRequired": false,
+      "notes": "Free US healthcare provider lookup API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Represent Open North",
+      "description": "Canadian and US political representatives data",
+      "url": "https://represent.opennorth.ca/",
+      "category": "government",
+      "documentation": "https://represent.opennorth.ca/",
+      "example": "https://represent.opennorth.ca/representatives/",
+      "authRequired": false,
+      "notes": "Free political data API.",
+      "worksIn": [
+        "US",
+        "CA"
+      ]
+    },
+    {
+      "name": "City Bikes",
+      "description": "Bike sharing data from around the world",
+      "url": "http://api.citybik.es/v2/",
+      "category": "transportation",
+      "documentation": "http://api.citybik.es/v2/",
+      "example": "http://api.citybik.es/v2/networks",
+      "authRequired": false,
+      "notes": "Free bike sharing API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Swiss Public Transport",
+      "description": "Swiss public transportation schedules",
+      "url": "https://transport.opendata.ch/",
+      "category": "transportation",
+      "documentation": "https://transport.opendata.ch/",
+      "example": "https://transport.opendata.ch/v1/connections?from=Lausanne&to=Geneva",
+      "authRequired": false,
+      "notes": "Free Swiss transport API.",
+      "worksIn": [
+        "CH"
+      ]
+    },
+    {
+      "name": "An API of Ice and Fire",
+      "description": "Game of Thrones data including characters, houses, books",
+      "url": "https://anapioficeandfire.com/",
+      "category": "entertainment",
+      "documentation": "https://anapioficeandfire.com/",
+      "example": "https://www.anapioficeandfire.com/api/characters/1",
+      "authRequired": false,
+      "notes": "Free Game of Thrones API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Ron Swanson Quotes",
+      "description": "Random Ron Swanson quotes from Parks and Recreation",
+      "url": "https://github.com/jamesseanwright/ron-swanson-quotes",
+      "category": "entertainment",
+      "documentation": "https://github.com/jamesseanwright/ron-swanson-quotes",
+      "example": "https://ron-swanson-quotes.herokuapp.com/v2/quotes",
+      "authRequired": false,
+      "notes": "Free Ron Swanson quotes API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "TVMaze",
+      "description": "TV show information, episodes, cast",
+      "url": "http://www.tvmaze.com/api",
+      "category": "entertainment",
+      "documentation": "http://www.tvmaze.com/api",
+      "example": "http://api.tvmaze.com/shows/1",
+      "authRequired": false,
+      "notes": "Free TV show data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Owen Wilson Wow",
+      "description": "API for actor Owen Wilson's wow exclamations in movies",
+      "url": "https://owen-wilson-wow-api.onrender.com/",
+      "category": "entertainment",
+      "documentation": "https://owen-wilson-wow-api.onrender.com/",
+      "example": "https://owen-wilson-wow-api.onrender.com/v1/random",
+      "authRequired": false,
+      "notes": "Free Owen Wilson wow API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "NHTSA Vehicle API",
+      "description": "US vehicle make/model data from NHTSA",
+      "url": "https://vpic.nhtsa.dot.gov/api/",
+      "category": "vehicle",
+      "documentation": "https://vpic.nhtsa.dot.gov/api/",
+      "example": "https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/car?format=json",
+      "authRequired": false,
+      "notes": "Free US vehicle data API.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "City Bikes API",
+      "description": "Bike sharing networks worldwide",
+      "url": "http://api.citybik.es/v2/networks",
+      "category": "transportation",
+      "documentation": "http://api.citybik.es/v2/",
+      "example": "http://api.citybik.es/v2/networks",
+      "authRequired": false,
+      "notes": "Free bike sharing networks API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "GBIF",
+      "description": "Global Biodiversity Information Facility",
+      "url": "http://api.gbif.org/v1/",
+      "category": "science",
+      "documentation": "http://api.gbif.org/v1/",
+      "example": "http://api.gbif.org/v1/species/search?q=panthera",
+      "authRequired": false,
+      "notes": "Free biodiversity data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Launch Library",
+      "description": "Space launch schedule data",
+      "url": "https://launchlibrary.net/docs/1.3/api.html",
+      "category": "space",
+      "documentation": "https://launchlibrary.net/docs/1.3/api.html",
+      "example": "https://launchlibrary.net/1.3/launch/next/5",
+      "authRequired": false,
+      "notes": "Free space launch schedule API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open Science Framework",
+      "description": "Research data and preprint sharing",
+      "url": "https://developer.osf.io",
+      "category": "science",
+      "documentation": "https://developer.osf.io",
+      "example": "https://api.osf.io/v2/preprints/",
+      "authRequired": false,
+      "notes": "Free open science research API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "HackerNews",
+      "description": "Hacker News stories and comments",
+      "url": "https://github.com/HackerNews/API",
+      "category": "news",
+      "documentation": "https://github.com/HackerNews/API",
+      "example": "https://hacker-news.firebaseio.com/v0/topstories.json",
+      "authRequired": false,
+      "notes": "Free Hacker News API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Bacon Ipsum",
+      "description": "Bacon-flavored Lorem Ipsum generator",
+      "url": "https://baconipsum.com/json-api/",
+      "category": "development",
+      "documentation": "https://baconipsum.com/json-api/",
+      "example": "https://baconipsum.com/api/?type=all-meat&paras=3",
+      "authRequired": false,
+      "notes": "Free bacon lorem ipsum generator API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Meme API",
+      "description": "Random memes from Reddit",
+      "url": "https://github.com/D3vd/Meme_Api",
+      "category": "fun",
+      "documentation": "https://github.com/D3vd/Meme_Api",
+      "example": "https://meme-api.com/gimme",
+      "authRequired": false,
+      "notes": "Free meme generator API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "USGS Water Services",
+      "description": "US water quality and availability data",
+      "url": "https://waterservices.usgs.gov/",
+      "category": "environment",
+      "documentation": "https://waterservices.usgs.gov/",
+      "example": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=02319000",
+      "authRequired": false,
+      "notes": "Free US water data API.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "Norwegian Weather",
+      "description": "Norwegian weather and forecast data",
+      "url": "https://api.met.no/weatherapi/documentation",
+      "category": "weather",
+      "documentation": "https://api.met.no/weatherapi/documentation",
+      "example": "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=60.10&lon=9.50",
+      "authRequired": false,
+      "notes": "Free Norwegian weather API.",
+      "worksIn": [
+        "NO"
+      ]
+    },
+    {
+      "name": "National Weather Service",
+      "description": "US National Weather Service data",
+      "url": "https://www.weather.gov/documentation/services-web-api",
+      "category": "weather",
+      "documentation": "https://www.weather.gov/documentation/services-web-api",
+      "example": "https://api.weather.gov/points/39.95,-75.15",
+      "authRequired": false,
+      "notes": "Free US NWS weather API.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "7Timer Weather",
+      "description": "Weather forecast data from China",
+      "url": "http://www.7timer.info/doc.php?lang=en",
+      "category": "weather",
+      "documentation": "http://www.7timer.info/doc.php?lang=en",
+      "example": "http://www.7timer.info/bin/api.pl?lon=113&lat=23&m=product&output=json",
+      "authRequired": false,
+      "notes": "Free global weather forecast API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Metro Lisboa",
+      "description": "Lisbon metro train real-time data",
+      "url": "http://app.metrolisboa.pt/status/getLinhas.php",
+      "category": "transportation",
+      "documentation": "http://app.metrolisboa.pt/",
+      "example": "http://app.metrolisboa.pt/status/getLinhas.php",
+      "authRequired": false,
+      "notes": "Free Lisbon metro API.",
+      "worksIn": [
+        "PT"
+      ]
+    },
+    {
+      "name": "ADS-B Exchange",
+      "description": "Access real-time and historical data of any and all airborne aircraft",
+      "url": "https://www.adsbexchange.com/data/",
+      "category": "transportation",
+      "documentation": "https://www.adsbexchange.com/data/",
+      "example": "https://www.adsbexchange.com/data/",
+      "authRequired": false,
+      "notes": "Free aircraft tracking data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Wikipedia API",
+      "description": "Wikipedia articles and data",
+      "url": "https://www.mediawiki.org/wiki/API:Main_page",
+      "category": "data",
+      "documentation": "https://www.mediawiki.org/wiki/API:Main_page",
+      "example": "https://en.wikipedia.org/api/rest_v1/page/summary/OpenAI",
+      "authRequired": false,
+      "notes": "Free Wikipedia API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Chronicling America",
+      "description": "US historical newspapers archive",
+      "url": "http://chroniclingamerica.loc.gov/about/api/",
+      "category": "news",
+      "documentation": "http://chroniclingamerica.loc.gov/about/api/",
+      "example": "http://chroniclingamerica.loc.gov/newspapers.json",
+      "authRequired": false,
+      "notes": "Free US historical newspapers API.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "OkSurf",
+      "description": "News sentiment and analysis",
+      "url": "https://ok.surf/",
+      "category": "news",
+      "documentation": "https://ok.surf/",
+      "example": "https://ok.surf/api/news",
+      "authRequired": false,
+      "notes": "Free news sentiment API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Callook.info",
+      "description": "US amateur radio callsign lookup",
+      "url": "https://callook.info",
+      "category": "data",
+      "documentation": "https://callook.info/api/",
+      "example": "https://callook.info/W1AW/json",
+      "authRequired": false,
+      "notes": "Free amateur radio callsign API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "French Address Search",
+      "description": "French address and postal code data",
+      "url": "https://geo.api.gouv.fr/adresse",
+      "category": "geocoding",
+      "documentation": "https://geo.api.gouv.fr/adresse",
+      "example": "https://api-adresse.data.gouv.fr/search/?q=paris",
+      "authRequired": false,
+      "notes": "Free French address API.",
+      "worksIn": [
+        "FR"
+      ]
+    },
+    {
+      "name": "USPTO Patent API",
+      "description": "US Patent and Trademark Office data",
+      "url": "https://www.uspto.gov/learning-and-resources/open-data-and-mobility",
+      "category": "intellectual_property",
+      "documentation": "https://developer.uspto.gov/api/v1/",
+      "example": "https://developer.uspto.gov/api/v1/patents/search",
+      "authRequired": false,
+      "notes": "Free US patent data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Minor Planet Center",
+      "description": "Asteroid and minor planet data",
+      "url": "http://www.asterank.com/mpc",
+      "category": "science",
+      "documentation": "http://www.asterank.com/mpc",
+      "example": "http://asterank.com/api/mpc?limit=10",
+      "authRequired": false,
+      "notes": "Free minor planet/asteroid API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Microlink",
+      "description": "Extract metadata from URLs",
+      "url": "https://microlink.io",
+      "category": "development",
+      "documentation": "https://microlink.io/docs/api",
+      "example": "https://api.microlink.io/?url=https://google.com",
+      "authRequired": false,
+      "notes": "Free URL metadata extraction API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "IP Vigilante",
+      "description": "IP address reputation and geolocation",
+      "url": "https://www.ipvigilante.com/",
+      "category": "geocoding",
+      "documentation": "https://www.ipvigilante.com/",
+      "example": "https://ipvigilante.com/8.8.8.8",
+      "authRequired": false,
+      "notes": "Free IP vigilance API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "BCLaws",
+      "description": "British Columbia laws and legislation",
+      "url": "http://www.bclaws.ca/civix/template/complete/api/index.html",
+      "category": "government",
+      "documentation": "http://www.bclaws.ca/civix/template/complete/api/index.html",
+      "example": "http://www.bclaws.ca/civix/api/v1/documents",
+      "authRequired": false,
+      "notes": "Free Canadian law API.",
+      "worksIn": [
+        "CA"
+      ]
+    },
+    {
+      "name": "Census.gov",
+      "description": "US Census Bureau data and statistics",
+      "url": "https://www.census.gov/data/developers/data-sets.html",
+      "category": "government",
+      "documentation": "https://www.census.gov/data/developers/data-sets.html",
+      "example": "https://api.census.gov/data/2020/dec/pl?get=NAME,P1_001N&for=state:*",
+      "authRequired": false,
+      "notes": "Free US Census data API.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "Federal Register",
+      "description": "US Federal Register documents",
+      "url": "https://www.federalregister.gov/reader-aids/developer-resources",
+      "category": "government",
+      "documentation": "https://www.federalregister.gov/reader-aids/developer-resources",
+      "example": "https://www.federalregister.gov/api/v1/documents.json",
+      "authRequired": false,
+      "notes": "Free US Federal Register API.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "Open Government - Canada",
+      "description": "Canadian government open data",
+      "url": "http://open.canada.ca/en",
+      "category": "government",
+      "documentation": "http://open.canada.ca/en/api",
+      "example": "http://open.canada.ca/data/en/dataset",
+      "authRequired": false,
+      "notes": "Free Canadian government data.",
+      "worksIn": [
+        "CA"
+      ]
+    },
+    {
+      "name": "Open Government - Poland",
+      "description": "Polish government open data",
+      "url": "https://dane.gov.pl/en",
+      "category": "government",
+      "documentation": "https://dane.gov.pl/en/developers",
+      "example": "https://dane.gov.pl/api/3/action/package_list",
+      "authRequired": false,
+      "notes": "Free Polish government data.",
+      "worksIn": [
+        "PL"
+      ]
+    },
+    {
+      "name": "DevITjobs",
+      "description": "IT job listings",
+      "url": "https://devitjobs.us/api/jobsLight",
+      "category": "jobs",
+      "documentation": "https://devitjobs.us/api/jobsLight",
+      "example": "https://devitjobs.us/api/jobsLight",
+      "authRequired": false,
+      "notes": "Free IT job listings API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "AI Dev Board Jobs",
+      "description": "AI and developer job listings",
+      "url": "https://aidevboard.com/api/v1/jobs",
+      "category": "jobs",
+      "documentation": "https://aidevboard.com/api/v1/jobs",
+      "example": "https://aidevboard.com/api/v1/jobs?filter=remote",
+      "authRequired": false,
+      "notes": "Free AI developer jobs API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "AmiiboAPI",
+      "description": "Nintendo Amiibo figures data",
+      "url": "http://www.amiiboapi.com/",
+      "category": "games",
+      "documentation": "http://www.amiiboapi.com/",
+      "example": "http://www.amiiboapi.com/api/amiibo/?name=mario",
+      "authRequired": false,
+      "notes": "Free Nintendo Amiibo API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "ChuckNorris.io",
+      "description": "Chuck Norris jokes database",
+      "url": "https://api.chucknorris.io",
+      "category": "fun",
+      "documentation": "https://api.chucknorris.io",
+      "example": "https://api.chucknorris.io/jokes/random",
+      "authRequired": false,
+      "notes": "Free Chuck Norris jokes API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Final Fantasy XIV",
+      "description": "FFXIV game data, items, characters",
+      "url": "https://xivapi.com/",
+      "category": "games",
+      "documentation": "https://xivapi.com/",
+      "example": "https://xivapi.com/item/1",
+      "authRequired": false,
+      "notes": "Free FFXIV game data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Magic The Gathering API",
+      "description": "Magic: The Gathering card database",
+      "url": "https://magicthegathering.io/",
+      "category": "games",
+      "documentation": "https://magicthegathering.io/",
+      "example": "https://api.magicthegathering.io/v1/cards?name=snap",
+      "authRequired": false,
+      "notes": "Free MTG card API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Pokémon TCG",
+      "description": "Pokémon Trading Card Game data",
+      "url": "https://pokemontcg.io/",
+      "category": "games",
+      "documentation": "https://pokemontcg.io/",
+      "example": "https://api.pokemontcg.io/v1/cards?name=pikachu",
+      "authRequired": false,
+      "notes": "Free Pokemon TCG API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Scryfall",
+      "description": "Magic: The Gathering card search",
+      "url": "https://scryfall.com/docs/api",
+      "category": "games",
+      "documentation": "https://scryfall.com/docs/api",
+      "example": "https://api.scryfall.com/cards/search?q=combo",
+      "authRequired": false,
+      "notes": "Free MTG card search API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "xkcd",
+      "description": "xkcd comics JSON API",
+      "url": "https://xkcd.com/json.html",
+      "category": "fun",
+      "documentation": "https://xkcd.com/json.html",
+      "example": "https://xkcd.com/info.0.json",
+      "authRequired": false,
+      "notes": "Free xkcd comics API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Bologna Open Data",
+      "description": "Italian city of Bologna open data",
+      "url": "https://dati.comune.bologna.it/",
+      "category": "government",
+      "documentation": "https://dati.comune.bologna.it/api/3/action/package_list",
+      "example": "https://dati.comune.bologna.it/api/3/action/package_list",
+      "authRequired": false,
+      "notes": "Free Bologna city data.",
+      "worksIn": [
+        "IT"
+      ]
+    },
+    {
+      "name": "Cartola FC",
+      "description": "The Cartola FC API serves to check the partial points of your team",
+      "url": "https://github.com/wgenial/cartrolandofc",
+      "category": "sports",
+      "documentation": "https://github.com/wgenial/cartrolandofc",
+      "example": "https://github.com/wgenial/cartrolandofc",
+      "authRequired": false,
+      "notes": "Free, no auth required.",
+      "worksIn": [
+        "BR"
+      ]
+    },
+    {
+      "name": "Golf-Data",
+      "description": "Golf data API with golf course, club and hole information",
+      "url": "https://github.com/Jacobbrewer1/golf-data-docs",
+      "category": "sports",
+      "documentation": "https://github.com/Jacobbrewer1/golf-data-docs",
+      "example": "https://github.com/Jacobbrewer1/golf-data-docs",
+      "authRequired": false,
+      "notes": "Free, no auth required.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "FishFish",
+      "description": "Security and threat intelligence",
+      "url": "https://fishfish.gg/",
+      "category": "security",
+      "documentation": "https://fishfish.gg/docs",
+      "example": "https://fishfish.gg/api/v1/lookup?domain=google.com",
+      "authRequired": false,
+      "notes": "Free threat intelligence API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "National Vulnerability Database",
+      "description": "US NIST vulnerability database",
+      "url": "https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog",
+      "category": "security",
+      "documentation": "https://nvd.nist.gov/developers",
+      "example": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "authRequired": false,
+      "notes": "Free vulnerability data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "UK Police Data",
+      "description": "UK police data and crime statistics",
+      "url": "https://data.police.uk/docs/",
+      "category": "security",
+      "documentation": "https://data.police.uk/docs/",
+      "example": "https://data.police.uk/api/crimes-street/all-crime?lat=52.629729&lng=-1.138592",
+      "authRequired": false,
+      "notes": "Free UK police data API.",
+      "worksIn": [
+        "GB"
+      ]
+    },
+    {
+      "name": "Let's Count",
+      "description": "Counter and analytics API",
+      "url": "https://letscountapi.com/",
+      "category": "development",
+      "documentation": "https://letscountapi.com/",
+      "example": "https://letscountapi.com/counter/visits",
+      "authRequired": false,
+      "notes": "Free counter/analytics API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Postmon",
+      "description": "An API to query Brazilian ZIP codes and orders easily, quickly and free",
+      "url": "http://postmon.com.br",
+      "category": "tracking",
+      "documentation": "http://postmon.com.br",
+      "example": "http://postmon.com.br",
+      "authRequired": false,
+      "notes": "Free Brazilian ZIP code API.",
+      "worksIn": [
+        "BR"
+      ]
+    },
+    {
+      "name": "Icelandic APIs",
+      "description": "Open APIs that deliver services in or regarding Iceland",
+      "url": "http://docs.apis.is/",
+      "category": "transportation",
+      "documentation": "http://docs.apis.is/",
+      "example": "http://docs.apis.is/",
+      "authRequired": false,
+      "notes": "Free Icelandic APIs.",
+      "worksIn": [
+        "IS"
+      ]
+    },
+    {
+      "name": "NextBus",
+      "description": "Multi-agency transit predictions",
+      "url": "http://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf",
+      "category": "transportation",
+      "documentation": "http://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf",
+      "example": "http://webservices.nextbus.com/service/publicXMLFeed?command=agencyList",
+      "authRequired": false,
+      "notes": "Free NextBus transit API.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "World Bank Data",
+      "description": "World Bank development indicators",
+      "url": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589",
+      "category": "data",
+      "documentation": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589",
+      "example": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+      "authRequired": false,
+      "notes": "Free World Bank data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Yomi Text Analysis",
+      "description": "Japanese tokenizer and morphological analysis web API",
+      "url": "https://github.com/ookii-tsuki/yomi",
+      "category": "text_analysis",
+      "documentation": "https://github.com/ookii-tsuki/yomi",
+      "example": "https://github.com/ookii-tsuki/yomi",
+      "authRequired": false,
+      "notes": "Free, no auth required.",
+      "worksIn": [
+        "JP"
+      ]
+    },
+    {
+      "name": "F1 Data API",
+      "description": "Formula 1 data API that delivers data from the F1 Archive dating back to 1950",
+      "url": "https://github.com/Jacobbrewer1/f1-data",
+      "category": "sports",
+      "documentation": "https://github.com/Jacobbrewer1/f1-data",
+      "example": "https://github.com/Jacobbrewer1/f1-data",
+      "authRequired": false,
+      "notes": "Free, no auth required.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Football (Soccer) Videos",
+      "description": "Embed codes for goals and highlights from Premier League, Bundesliga, Serie A and many more",
+      "url": "https://www.scorebat.com/video-api/",
+      "category": "sports",
+      "documentation": "https://www.scorebat.com/video-api/",
+      "example": "https://www.scorebat.com/video-api/",
+      "authRequired": false,
+      "notes": "Free, no auth required.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Beeceptors CRUD APIs",
+      "description": "Free stateful CRUD APIs",
+      "url": "https://beeceptor.com/crud-api/?ref=public-api-lists",
+      "category": "development",
+      "documentation": "https://beeceptor.com/crud-api/?ref=public-api-lists",
+      "example": "https://beeceptor.com/crud-api/?ref=public-api-lists",
+      "authRequired": false,
+      "notes": "Free, no auth required.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Short Id",
+      "description": "Generate unique short Ids",
+      "url": "https://github.com/aguedo/idgen",
+      "category": "development",
+      "documentation": "https://github.com/aguedo/idgen",
+      "example": "https://github.com/aguedo/idgen",
+      "authRequired": false,
+      "notes": "Free, no auth required.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Softwium",
+      "description": "Test data for testing and prototyping",
+      "url": "https://softwium.com/fake-api/",
+      "category": "development",
+      "documentation": "https://softwium.com/fake-api/",
+      "example": "https://softwium.com/fake-api/",
+      "authRequired": false,
+      "notes": "Free, no auth required.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "UUID Generator",
+      "description": "Generate UUIDs",
+      "url": "https://www.uuidtools.com/docs",
+      "category": "utility",
+      "documentation": "https://www.uuidtools.com/docs",
+      "example": "https://www.uuidtools.com/api/generate/v1",
+      "authRequired": false,
+      "notes": "Free, no auth required.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "ArcNautical Vessel Check",
+      "description": "Vessel sanctions screening, ownership transparency scoring, and vetting intelligence",
+      "url": "https://github.com/SaltyTaro/vessel-check-api",
+      "category": "transportation",
+      "documentation": "https://github.com/SaltyTaro/vessel-check-api",
+      "example": "https://github.com/SaltyTaro/vessel-check-api",
+      "authRequired": false,
+      "notes": "Free vessel vetting API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Community Transit",
+      "description": "Transitland API",
+      "url": "https://github.com/transitland/transitland-datastore/blob/master/README.md#api-endpoints",
+      "category": "transportation",
+      "documentation": "https://github.com/transitland/transitland-datastore/blob/master/README.md#api-endpoints",
+      "example": "https://github.com/transitland/transitland-datastore/blob/master/README.md#api-endpoints",
+      "authRequired": false,
+      "notes": "Free transit data API.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Transport for Atlanta, US",
+      "description": "Marta",
+      "url": "http://www.itsmarta.com/app-developer-resources.aspx",
+      "category": "transportation",
+      "documentation": "http://www.itsmarta.com/app-developer-resources.aspx",
+      "example": "http://www.itsmarta.com/app-developer-resources.aspx",
+      "authRequired": false,
+      "notes": "Free Marta transit API for Atlanta.",
+      "worksIn": [
+        "US"
+      ]
+    },
+    {
+      "name": "Transport for Ottawa, Canada",
+      "description": "OC Transpo next bus arrival API",
+      "url": "http://www.octranspo.com/index.php/developers",
+      "category": "transportation",
+      "documentation": "http://www.octranspo.com/index.php/developers",
+      "example": "http://www.octranspo.com/index.php/developers",
+      "authRequired": false,
+      "notes": "Free OC Transpo API for Ottawa.",
+      "worksIn": [
+        "CA"
+      ]
+    },
+    {
+      "name": "OpenAlex",
+      "description": "Free, open catalog of 250+ million scholarly works (papers, theses, books) with authors, citations, institutions, and topics. No API key needed.",
+      "url": "https://api.openalex.org/works",
+      "category": "academic",
+      "documentation": "https://docs.openalex.org/",
+      "example": "https://api.openalex.org/works?per_page=1",
+      "authRequired": false,
+      "notes": "Completely free, rate-limited to 100k requests per day without key. Register for a free key for 1M/day.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Nominatim",
+      "description": "Free geocoding API from OpenStreetMap. Convert addresses to GPS coordinates (forward) or coordinates to addresses (reverse). No API key needed.",
+      "url": "https://nominatim.openstreetmap.org/search",
+      "category": "geocoding",
+      "documentation": "https://nominatim.org/release-docs/develop/api/Overview/",
+      "example": "https://nominatim.openstreetmap.org/search?q=London&format=json&limit=1",
+      "authRequired": false,
+      "notes": "Free for reasonable use. Requires User-Agent header identifying your app. Max 1 request per second.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Have I Been Pwned",
+      "description": "Check if passwords have been exposed in data breaches using k-anonymity. Your password never leaves your device. No API key needed.",
+      "url": "https://api.pwnedpasswords.com/range/",
+      "category": "security",
+      "documentation": "https://haveibeenpwned.com/API/v3",
+      "example": "https://api.pwnedpasswords.com/range/21BD1",
+      "authRequired": false,
+      "notes": "Uses k-anonymity model - only first 5 chars of SHA-1 hash sent. Free, no rate limits published. Completely free by Troy Hunt.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Chess.com",
+      "description": "Free API to query Chess.com player profiles, stats, games, tournaments, and more. No authentication required.",
+      "url": "https://api.chess.com/pub/player",
+      "category": "entertainment",
+      "documentation": "https://www.chess.com/news/view/published-data-api",
+      "example": "https://api.chess.com/pub/player/hikaru",
+      "authRequired": false,
+      "notes": "Completely free, no rate limits documented. Public data only (player profiles, games, tournaments).",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "HTTPBin",
+      "description": "Free HTTP request and response debugging service. See exactly what your HTTP client sends - headers, IP, form data, JSON, and more. No API key needed.",
+      "url": "https://httpbin.org",
+      "category": "developer-tools",
+      "documentation": "https://httpbin.org/",
+      "example": "https://httpbin.org/get",
+      "authRequired": false,
+      "notes": "Free to use. Also supports POST, PUT, DELETE methods. Can inspect headers, IP, auth, status codes, delays, and more.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "wttr.in",
+      "description": "Free weather API with a curl-friendly interface. Returns JSON or plain text weather reports for any location worldwide. No API key needed.",
+      "url": "https://wttr.in/",
+      "category": "weather",
+      "documentation": "https://github.com/chubin/wttr.in",
+      "example": "https://wttr.in/London?format=j1",
+      "authRequired": false,
+      "notes": "Completely free. Add ?format=j1 for JSON. Also supports plain text, PNG, and ANSI output. Used heavily in terminals.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open Topo Data",
+      "description": "Free elevation API. Get elevation in meters for any GPS coordinate using various elevation datasets (etopo1, ned10m, etc.). No API key needed.",
+      "url": "https://api.opentopodata.org/v1/etopo1",
+      "category": "geocoding",
+      "documentation": "https://www.opentopodata.org/",
+      "example": "https://api.opentopodata.org/v1/etopo1?locations=40.71,-74.00",
+      "authRequired": false,
+      "notes": "Free. Multiple datasets: etopo1 (global), ned10m (US), nzdem (NZ), etc. Max 100 locations per request.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "npm Registry",
+      "description": "Free API to query the npm package registry. Get package metadata, versions, dependencies, downloads, and maintainers. No API key needed.",
+      "url": "https://registry.npmjs.org/",
+      "category": "developer-tools",
+      "documentation": "https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md",
+      "example": "https://registry.npmjs.org/express/latest",
+      "authRequired": false,
+      "notes": "Completely free, no rate limits published. Returns full package.json metadata. Also supports search endpoint.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Affirmations.dev",
+      "description": "Free positive affirmation API. Returns a random uplifting affirmation as JSON. Simple, no authentication, no rate limits.",
+      "url": "https://www.affirmations.dev/",
+      "category": "entertainment",
+      "documentation": "https://github.com/annthurium/affirmations",
+      "example": "https://www.affirmations.dev/",
+      "authRequired": false,
+      "notes": "Super simple - just one endpoint. Returns {affirmation: '...'} format. Free for any use.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "isEven API",
+      "description": "Free parity check API. Returns whether a number is even or odd, with a random advertisement. Silly but fun. No API key needed.",
+      "url": "https://api.isevenapi.xyz/api/iseven/",
+      "category": "entertainment",
+      "documentation": "https://isevenapi.xyz/",
+      "example": "https://api.isevenapi.xyz/api/iseven/6",
+      "authRequired": false,
+      "notes": "100% free. Returns iseven boolean plus a random ad. Designed as a joke/novelty API but fully functional.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "FreeToGame",
+      "description": "Free API listing free-to-play games across PC, browser, and mobile platforms. Browse, filter by genre/platform, and get game details. No API key needed.",
+      "url": "https://www.freetogame.com/api/games",
+      "category": "entertainment",
+      "documentation": "https://www.freetogame.com/api-doc",
+      "example": "https://www.freetogame.com/api/games?platform=pc",
+      "authRequired": false,
+      "notes": "Completely free. Filter by platform (pc, browser, all), genre, and tag. Returns game title, thumbnail, description, and links.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "USGS Earthquakes",
+      "description": "Free USGS Earthquake API providing real-time earthquake data worldwide. GeoJSON format with magnitude, location, depth, and time. No API key needed.",
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/",
+      "category": "weather",
+      "documentation": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "example": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson",
+      "authRequired": false,
+      "notes": "Completely free. Multiple feeds: 2.5_day, all_day, significant_week, etc. Also supports GeoJSON, CSV, and KML formats.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "arXiv",
+      "description": "Free API to search 2.5+ million scholarly papers across physics, math, computer science, and more. Returns paper metadata including title, authors, abstract, and categories.",
+      "url": "https://export.arxiv.org/api/query",
+      "category": "academic",
+      "documentation": "https://arxiv.org/help/api",
+      "example": "http://export.arxiv.org/api/query?search_query=all:electron&start=0&max_results=1",
+      "authRequired": false,
+      "notes": "Returns Atom XML format. Free, no rate limits documented. Supports complex search queries (AND, OR, ANDNOT). Max 30000 results per query.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Spaceflight News",
+      "description": "Free API for spaceflight news articles. Browse the latest articles about rocket launches, space missions, and space industry developments. No API key needed.",
+      "url": "https://api.spaceflightnewsapi.net/v4/articles/",
+      "category": "news",
+      "documentation": "https://spaceflightnewsapi.net/",
+      "example": "https://api.spaceflightnewsapi.net/v4/articles/?limit=1",
+      "authRequired": false,
+      "notes": "Completely free. Supports pagination (limit/offset), search, and filtering. Returns title, summary, image URL, news site, and publication date.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Fake Store API",
+      "description": "Fake online store for testing e-commerce",
+      "url": "https://fakestoreapi.com",
+      "category": "development",
+      "documentation": "https://fakestoreapi.com/",
+      "example": "https://fakestoreapi.com/products",
+      "authRequired": false,
+      "notes": "No auth required",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "DummyJSON",
+      "description": "Fake online store and user data for testing",
+      "url": "https://dummyjson.com",
+      "category": "development",
+      "documentation": "https://dummyjson.com/",
+      "example": "https://dummyjson.com/products",
+      "authRequired": false,
+      "notes": "No auth required",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "TheMealDB",
+      "description": "Database of recipes and meals",
+      "url": "https://www.themealdb.com/api/json/v1/1",
+      "category": "food",
+      "documentation": "https://www.themealdb.com/api.php",
+      "example": "https://www.themealdb.com/api/json/v1/1/random.php",
+      "authRequired": false,
+      "notes": "No auth required",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "ExchangeRate-API",
+      "description": "Real-time currency exchange rates",
+      "url": "https://open.er-api.com/v6",
+      "category": "finance",
+      "documentation": "https://exchangerate-api.com/",
+      "example": "https://open.er-api.com/v6/latest/USD",
+      "authRequired": false,
+      "notes": "Free open endpoint for current rates",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "University Domains",
+      "description": "University search by country",
+      "url": "http://universities.hipolabs.com/search",
+      "category": "education",
+      "documentation": "http://universities.hipolabs.com/",
+      "example": "http://universities.hipolabs.com/search?country=United+States",
+      "authRequired": false,
+      "notes": "No auth",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Sunrise Sunset",
+      "description": "Sunrise and sunset times for any location",
+      "url": "https://api.sunrise-sunset.org/json",
+      "category": "science",
+      "documentation": "https://sunrise-sunset.org/api",
+      "example": "https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400",
+      "authRequired": false,
+      "notes": "Simple query params, no auth",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "JokeAPI",
+      "description": "Programmer and general jokes",
+      "url": "https://v2.jokeapi.dev/joke",
+      "category": "fun",
+      "documentation": "https://jokeapi.dev/",
+      "example": "https://v2.jokeapi.dev/joke/Programming",
+      "authRequired": false,
+      "notes": "Filter by category and type",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Zeno Quotes",
+      "description": "Inspirational quotes from famous people",
+      "url": "https://zenquotes.io/api",
+      "category": "fun",
+      "documentation": "https://zenquotes.io/",
+      "example": "https://zenquotes.io/api/random",
+      "authRequired": false,
+      "notes": "Free with attribution",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Kitsu API",
+      "description": "Anime and manga database",
+      "url": "https://kitsu.io/api/edge",
+      "category": "entertainment",
+      "documentation": "https://kitsu.docs.apiary.io/",
+      "example": "https://kitsu.io/api/edge/anime",
+      "authRequired": false,
+      "notes": "JSON API format",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Deck of Cards",
+      "description": "Virtual playing card deck",
+      "url": "https://deckofcardsapi.com/api/deck",
+      "category": "fun",
+      "documentation": "https://deckofcardsapi.com/",
+      "example": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+      "authRequired": false,
+      "notes": "Draw shuffle etc.",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Disease.sh",
+      "description": "COVID-19 and disease tracking data",
+      "url": "https://disease.sh/v3",
+      "category": "health",
+      "documentation": "https://disease.sh/docs/",
+      "example": "https://disease.sh/v3/covid-19/all",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Bible API",
+      "description": "Bible verses and chapters",
+      "url": "https://bible-api.com",
+      "category": "education",
+      "documentation": "https://bible-api.com/",
+      "example": "https://bible-api.com/john+3:16",
+      "authRequired": false,
+      "notes": "Multiple translations",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Faker API",
+      "description": "Random fake data generator",
+      "url": "https://fakerapi.it/api/v1",
+      "category": "development",
+      "documentation": "https://fakerapi.it/",
+      "example": "https://fakerapi.it/api/v1/companies?_quantity=1",
+      "authRequired": false,
+      "notes": "Generates realistic test data",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Blockchain.info",
+      "description": "Bitcoin blockchain data",
+      "url": "https://blockchain.info",
+      "category": "finance",
+      "documentation": "https://www.blockchain.com/explorer/api",
+      "example": "https://blockchain.info/latestblock",
+      "authRequired": false,
+      "notes": "No auth for basic queries",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "MBTA API",
+      "description": "Massachusetts Bay Transit data",
+      "url": "https://api-v3.mbta.com",
+      "category": "transport",
+      "documentation": "https://www.mbta.com/developers",
+      "example": "https://api-v3.mbta.com/routes",
+      "authRequired": false,
+      "notes": "No auth",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "Open Data NYC",
+      "description": "New York City open data portal",
+      "url": "https://data.cityofnewyork.us/resource",
+      "category": "government",
+      "documentation": "https://opendata.cityofnewyork.us/",
+      "example": "https://data.cityofnewyork.us/resource/nwxe-4ae8.json",
+      "authRequired": false,
+      "notes": "Socrata open data",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "Open Library Search",
+      "description": "Book search engine",
+      "url": "https://openlibrary.org/search.json",
+      "category": "education",
+      "documentation": "https://openlibrary.org/developers/api",
+      "example": "https://openlibrary.org/search.json?q=javascript&limit=1",
+      "authRequired": false,
+      "notes": "Part of Open Library",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "GitHub API",
+      "description": "GitHub public API",
+      "url": "https://api.github.com",
+      "category": "development",
+      "documentation": "https://docs.github.com/en/rest",
+      "example": "https://api.github.com/repos/opencode-ai/opencode",
+      "authRequired": false,
+      "notes": "60 req/hr unauthenticated",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open Library Books",
+      "description": "Specific book data",
+      "url": "https://openlibrary.org/works",
+      "category": "education",
+      "documentation": "https://openlibrary.org/developers/api",
+      "example": "https://openlibrary.org/works/OL45804W.json",
+      "authRequired": false,
+      "notes": "Part of Open Library",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "OpenStreetMap Nominatim",
+      "description": "Geocoding and map search",
+      "url": "https://nominatim.openstreetmap.org",
+      "category": "utility",
+      "documentation": "https://nominatim.org/release-docs/develop/api/Overview/",
+      "example": "https://nominatim.openstreetmap.org/search?q=New+York&format=json",
+      "authRequired": false,
+      "notes": "Usage policy requires attribution",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Overpass API",
+      "description": "OpenStreetMap query language",
+      "url": "https://overpass-api.de/api/interpreter",
+      "category": "utility",
+      "documentation": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+      "example": "https://overpass-api.de/api/interpreter?data=[out:json];node(51.50,-0.1,51.52,-0.09);out;",
+      "authRequired": false,
+      "notes": "Powerful map queries",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "WorldPop",
+      "description": "Population data worldwide",
+      "url": "https://www.worldpop.org/api",
+      "category": "data",
+      "documentation": "https://www.worldpop.org/apis",
+      "example": "https://www.worldpop.org/api/population",
+      "authRequired": false,
+      "notes": "Population density",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "COVID Tracking",
+      "description": "US COVID-19 data",
+      "url": "https://api.covidtracking.com/v1",
+      "category": "health",
+      "documentation": "https://covidtracking.com/data/api",
+      "example": "https://api.covidtracking.com/v1/us/current.json",
+      "authRequired": false,
+      "notes": "No auth",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "NPPES",
+      "description": "Healthcare provider registry",
+      "url": "https://npiregistry.cms.hhs.gov/api",
+      "category": "health",
+      "documentation": "https://npiregistry.cms.hhs.gov/",
+      "example": "https://npiregistry.cms.hhs.gov/api/?number=1234567893&version=2.1",
+      "authRequired": false,
+      "notes": "US provider data",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "FDA NDC",
+      "description": "National Drug Code directory",
+      "url": "https://api.fda.gov/drug/ndc.json",
+      "category": "health",
+      "documentation": "https://open.fda.gov/drug/ndc/",
+      "example": "https://api.fda.gov/drug/ndc.json?search=ibuprofen&limit=1",
+      "authRequired": false,
+      "notes": "Open FDA endpoint",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "FDA Adverse Events",
+      "description": "Drug adverse event reports",
+      "url": "https://api.fda.gov/drug/event.json",
+      "category": "health",
+      "documentation": "https://open.fda.gov/drug/event/",
+      "example": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.brand_name:ibuprofen&limit=1",
+      "authRequired": false,
+      "notes": "Open FDA endpoint",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "CDC Data",
+      "description": "CDC public health data",
+      "url": "https://data.cdc.gov/resource",
+      "category": "health",
+      "documentation": "https://dev.socrata.com/foundry/data.cdc.gov/",
+      "example": "https://data.cdc.gov/resource/hk9y-quqm.json",
+      "authRequired": false,
+      "notes": "Socrata open data",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "NOAA Tides",
+      "description": "Tide predictions for US coasts",
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter",
+      "category": "science",
+      "documentation": "https://tidesandcurrents.noaa.gov/api/",
+      "example": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=9414290&product=water_level&datum=MLLW&units=english&time_zone=gmt&format=json",
+      "authRequired": false,
+      "notes": "Official NOAA data",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "Treasury Dept",
+      "description": "US Treasury rates and data",
+      "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2",
+      "category": "finance",
+      "documentation": "https://fiscaldata.treasury.gov/api-documentation/",
+      "example": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/avg_interest_rates",
+      "authRequired": false,
+      "notes": "Open government data",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "USGS Water Data",
+      "description": "US water and streamflow data",
+      "url": "https://waterservices.usgs.gov/nwis/iv",
+      "category": "science",
+      "documentation": "https://waterservices.usgs.gov/",
+      "example": "https://waterservices.usgs.gov/nwis/iv/?site=09380000&format=json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "USGS Hazards",
+      "description": "US geological hazards",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+      "category": "science",
+      "documentation": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "example": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=5",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "NVD CVEs",
+      "description": "National Vulnerability Database",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "category": "security",
+      "documentation": "https://nvd.nist.gov/developers",
+      "example": "https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=linux",
+      "authRequired": false,
+      "notes": "No auth",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open-Meteo Air Quality",
+      "description": "Air quality forecast data",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality",
+      "category": "science",
+      "documentation": "https://open-meteo.com/en/docs/air-quality-api",
+      "example": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=50&longitude=10&current=european_aqi",
+      "authRequired": false,
+      "notes": "Open-Meteo free tier",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open-Meteo Flood",
+      "description": "Flood forecast data",
+      "url": "https://flood-api.open-meteo.com/v1/flood",
+      "category": "weather",
+      "documentation": "https://open-meteo.com/en/docs/flood-api",
+      "example": "https://flood-api.open-meteo.com/v1/flood?latitude=50&longitude=10&daily=river_discharge",
+      "authRequired": false,
+      "notes": "Free flood data",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open-Meteo Marine",
+      "description": "Marine weather forecast",
+      "url": "https://marine-api.open-meteo.com/v1/marine",
+      "category": "weather",
+      "documentation": "https://open-meteo.com/en/docs/marine-weather-api",
+      "example": "https://marine-api.open-meteo.com/v1/marine?latitude=50&longitude=10&hourly=wave_height",
+      "authRequired": false,
+      "notes": "Free marine weather",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open Library Subjects",
+      "description": "Books by subject",
+      "url": "https://openlibrary.org/subjects",
+      "category": "education",
+      "documentation": "https://openlibrary.org/developers/api",
+      "example": "https://openlibrary.org/subjects/love.json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Open Library Authors",
+      "description": "Author data and works",
+      "url": "https://openlibrary.org/authors",
+      "category": "education",
+      "documentation": "https://openlibrary.org/developers/api",
+      "example": "https://openlibrary.org/authors/OL23919A.json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "DBpedia",
+      "description": "Structured Wikipedia data",
+      "url": "https://dbpedia.org/data",
+      "category": "data",
+      "documentation": "https://www.dbpedia.org/resources/api/",
+      "example": "https://dbpedia.org/data/Barack_Obama.json",
+      "authRequired": false,
+      "notes": "Linked data from Wikipedia",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Hacker News",
+      "description": "Hacker News stories and comments",
+      "url": "https://hacker-news.firebaseio.com/v0",
+      "category": "news",
+      "documentation": "https://github.com/HackerNews/API",
+      "example": "https://hacker-news.firebaseio.com/v0/topstories.json",
+      "authRequired": false,
+      "notes": "Firebase-based API",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Lobsters",
+      "description": "Lobste.rs tech news",
+      "url": "https://lobste.rs",
+      "category": "news",
+      "documentation": "https://lobste.rs/about#api",
+      "example": "https://lobste.rs/hottest.json",
+      "authRequired": false,
+      "notes": "Community tech news",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Dev.to API",
+      "description": "Dev.to articles and users",
+      "url": "https://dev.to/api",
+      "category": "news",
+      "documentation": "https://developers.forem.com/api",
+      "example": "https://dev.to/api/articles?tag=javascript",
+      "authRequired": false,
+      "notes": "No auth for reads",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Hashnode API",
+      "description": "Hashnode blog articles",
+      "url": "https://api.hashnode.com",
+      "category": "news",
+      "documentation": "https://api.hashnode.com/",
+      "example": "https://api.hashnode.com/",
+      "authRequired": false,
+      "notes": "GraphQL endpoint",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Met Museum",
+      "description": "Metropolitan Museum collection",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1",
+      "category": "media",
+      "documentation": "https://metmuseum.github.io/",
+      "example": "https://collectionapi.metmuseum.org/public/collection/v1/objects/100",
+      "authRequired": false,
+      "notes": "Open museum data",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "Art Institute Chicago",
+      "description": "Art Institute collection API",
+      "url": "https://api.artic.edu/api/v1",
+      "category": "media",
+      "documentation": "https://api.artic.edu/docs/",
+      "example": "https://api.artic.edu/api/v1/artworks?limit=1",
+      "authRequired": false,
+      "notes": "Open collection data",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "Cleveland Museum",
+      "description": "Cleveland Museum of Art",
+      "url": "https://openaccess-api.clevelandart.org/api",
+      "category": "media",
+      "documentation": "https://www.clevelandart.org/open-access-api",
+      "example": "https://openaccess-api.clevelandart.org/api/artworks?limit=1",
+      "authRequired": false,
+      "notes": "Open access data",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "Quran API",
+      "description": "Quran verses and translations",
+      "url": "https://api.alquran.cloud/v1",
+      "category": "education",
+      "documentation": "https://alquran.cloud/api",
+      "example": "https://api.alquran.cloud/v1/surah/1",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Census Bureau",
+      "description": "US Census demographic data",
+      "url": "https://api.census.gov/data",
+      "category": "government",
+      "documentation": "https://www.census.gov/data/developers/data-sets.html",
+      "example": "https://api.census.gov/data/2020/dec/pl?get=NAME,P1_001N&for=state:*",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "BLS Data",
+      "description": "US labor statistics",
+      "url": "https://api.bls.gov/publicAPI/v2",
+      "category": "data",
+      "documentation": "https://www.bls.gov/developers/",
+      "example": "https://api.bls.gov/publicAPI/v2/timeseries/data/LNS14000000",
+      "authRequired": false,
+      "notes": "Free public data",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "IMF Data",
+      "description": "IMF financial data",
+      "url": "https://www.imf.org/external/datamapper/api/v1",
+      "category": "finance",
+      "documentation": "https://www.imf.org/external/datamapper/",
+      "example": "https://www.imf.org/external/datamapper/api/v1/NGDPD",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Eurostat",
+      "description": "EU statistics data",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data",
+      "category": "data",
+      "documentation": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services",
+      "example": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tec00115?format=json",
+      "authRequired": false,
+      "notes": "EU open data",
+      "worksIn": [
+        "EU"
+      ]
+    },
+    {
+      "name": "British Columbia Data",
+      "description": "BC Canada open data",
+      "url": "https://catalogue.data.gov.bc.ca/api/3",
+      "category": "government",
+      "documentation": "https://catalogue.data.gov.bc.ca/",
+      "example": "https://catalogue.data.gov.bc.ca/api/3/action/package_list",
+      "authRequired": false,
+      "notes": "CKAN open data",
+      "worksIn": [
+        "CA"
+      ]
+    },
+    {
+      "name": "Canada Open Data",
+      "description": "Canadian government data",
+      "url": "https://open.canada.ca/data/api/3",
+      "category": "government",
+      "documentation": "https://open.canada.ca/en/open-data",
+      "example": "https://open.canada.ca/data/api/3/action/package_search",
+      "authRequired": false,
+      "notes": "CKAN open data",
+      "worksIn": [
+        "CA"
+      ]
+    },
+    {
+      "name": "UK Gov Data",
+      "description": "UK government data portal",
+      "url": "https://data.gov.uk/api/3",
+      "category": "government",
+      "documentation": "https://data.gov.uk/developer",
+      "example": "https://data.gov.uk/api/3/action/package_list",
+      "authRequired": false,
+      "notes": "CKAN open data",
+      "worksIn": [
+        "UK"
+      ]
+    },
+    {
+      "name": "DiceBear",
+      "description": "Generate random SVG avatars from text",
+      "url": "https://api.dicebear.com/6.x/pixel-art/svg",
+      "category": "media",
+      "documentation": "https://www.dicebear.com/how-to-use/http-api",
+      "example": "https://api.dicebear.com/6.x/pixel-art/svg",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Placebear",
+      "description": "Pictures of bears for use as placeholders",
+      "url": "https://placebear.com",
+      "category": "media",
+      "documentation": "https://placebear.com/",
+      "example": "https://placebear.com/200/300",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Anime News Network",
+      "description": "Anime and manga encyclopedia data",
+      "url": "https://cdn.animenewsnetwork.com/encyclopedia/api.xml",
+      "category": "entertainment",
+      "documentation": "https://www.animenewsnetwork.com/encyclopedia/api.php",
+      "example": "https://cdn.animenewsnetwork.com/encyclopedia/api.xml?title=4658",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Crossref",
+      "description": "Scholarly metadata and DOI lookup",
+      "url": "https://api.crossref.org",
+      "category": "academic",
+      "documentation": "https://api.crossref.org/",
+      "example": "https://api.crossref.org/journals?query=pharmacy+health",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Ice and Fire API",
+      "description": "Game of Thrones book characters and houses data",
+      "url": "https://anapioficeandfire.com/api",
+      "category": "entertainment",
+      "documentation": "https://anapioficeandfire.com/",
+      "example": "https://anapioficeandfire.com/api/characters/581",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "MCU Countdown",
+      "description": "Countdown until next MCU film release",
+      "url": "https://www.whenisthenextmcufilm.com/api",
+      "category": "entertainment",
+      "documentation": "https://www.whenisthenextmcufilm.com/",
+      "example": "https://www.whenisthenextmcufilm.com/api",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Wolne Lektury",
+      "description": "Polish public domain ebooks and authors",
+      "url": "https://wolnelektury.pl/api",
+      "category": "education",
+      "documentation": "https://wolnelektury.pl/api/",
+      "example": "https://wolnelektury.pl/api/authors/edgar-allan-poe/",
+      "authRequired": false,
+      "notes": "Polish open library",
+      "worksIn": [
+        "PL"
+      ]
+    },
+    {
+      "name": "CoinBase Currencies",
+      "description": "List of supported currencies and codes",
+      "url": "https://api.coinbase.com/v2/currencies",
+      "category": "finance",
+      "documentation": "https://docs.cloud.coinbase.com/",
+      "example": "https://api.coinbase.com/v2/currencies",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Gemini Ticker",
+      "description": "Cryptocurrency price ticker from Gemini exchange",
+      "url": "https://api.gemini.com/v2/ticker",
+      "category": "finance",
+      "documentation": "https://docs.gemini.com/",
+      "example": "https://api.gemini.com/v2/ticker/btcusd",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Kraken Trades",
+      "description": "Recent cryptocurrency trade data",
+      "url": "https://api.kraken.com/0/public/Trades",
+      "category": "finance",
+      "documentation": "https://docs.kraken.com/rest/",
+      "example": "https://api.kraken.com/0/public/Trades?pair=ltcusd",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "KuCoin Stats",
+      "description": "Cryptocurrency market stats from KuCoin",
+      "url": "https://api.kucoin.com/api/v1/market/stats",
+      "category": "finance",
+      "documentation": "https://docs.kucoin.com/",
+      "example": "https://api.kucoin.com/api/v1/market/stats?symbol=BTC-USDT",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "NBP Web API",
+      "description": "Polish National Bank exchange rates and gold prices",
+      "url": "http://api.nbp.pl/api",
+      "category": "finance",
+      "documentation": "http://api.nbp.pl/",
+      "example": "http://api.nbp.pl/api/cenyzlota/last/30/?format=json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "PL"
+      ]
+    },
+    {
+      "name": "Nexchange",
+      "description": "Cryptocurrency exchange pair data",
+      "url": "https://api.n.exchange/en/api/v1/pair",
+      "category": "finance",
+      "documentation": "https://n.exchange/",
+      "example": "https://api.n.exchange/en/api/v1/pair/",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "OKX Tickers",
+      "description": "Cryptocurrency market tickers from OKX",
+      "url": "https://www.okx.com/api/v5/market/tickers",
+      "category": "finance",
+      "documentation": "https://www.okx.com/api-v5",
+      "example": "https://www.okx.com/api/v5/market/tickers?instType=SPOT",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "WazirX Tickers",
+      "description": "Cryptocurrency tickers from WazirX exchange",
+      "url": "https://api.wazirx.com/sapi/v1/tickers/24hr",
+      "category": "finance",
+      "documentation": "https://docs.wazirx.com/",
+      "example": "https://api.wazirx.com/sapi/v1/tickers/24hr",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "QR Code API",
+      "description": "Create and read QR codes with customizable size",
+      "url": "http://api.qrserver.com/v1/create-qr-code",
+      "category": "utility",
+      "documentation": "https://goqr.me/api/",
+      "example": "http://api.qrserver.com/v1/create-qr-code/?data=https://example.com&size=100x100",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "IP2Location",
+      "description": "Get IP address geolocation data",
+      "url": "https://api.ip2location.io",
+      "category": "development",
+      "documentation": "https://www.ip2location.io/",
+      "example": "https://api.ip2location.io/?ip=8.8.8.8",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "is.gd",
+      "description": "URL shortener service",
+      "url": "https://is.gd/create.php",
+      "category": "utility",
+      "documentation": "https://is.gd/api.php",
+      "example": "https://is.gd/create.php?format=simple&url=www.example.com",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Cocktail Database",
+      "description": "Cocktail and drink recipes",
+      "url": "https://www.thecocktaildb.com/api/json/v1/1/search.php",
+      "category": "food",
+      "documentation": "https://www.thecocktaildb.com/api.php",
+      "example": "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita",
+      "authRequired": false,
+      "notes": "Test key available public",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Whisky Hunter",
+      "description": "Whisky auction prices and data",
+      "url": "https://whiskyhunter.net/api/auctions_data",
+      "category": "food",
+      "documentation": "https://whiskyhunter.net/api/",
+      "example": "https://whiskyhunter.net/api/auctions_data/?format=json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "CheapShark",
+      "description": "Digital game price comparison",
+      "url": "https://www.cheapshark.com/api/1.0/deals",
+      "category": "entertainment",
+      "documentation": "https://apidocs.cheapshark.com/",
+      "example": "https://www.cheapshark.com/api/1.0/deals?upperPrice=15",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "D&D 5th Edition API",
+      "description": "Official D&D 5e SRD reference data",
+      "url": "https://www.dnd5eapi.co/api",
+      "category": "entertainment",
+      "documentation": "https://www.dnd5eapi.co/docs",
+      "example": "https://www.dnd5eapi.co/api/features",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Data Dragon",
+      "description": "League of Legends game data including champions and items",
+      "url": "https://ddragon.leagueoflegends.com/cdn",
+      "category": "entertainment",
+      "documentation": "https://developer.riotgames.com/docs/lol",
+      "example": "https://ddragon.leagueoflegends.com/cdn/14.3.1/data/en_US/champion.json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Gamerpower",
+      "description": "Free game giveaways and loot",
+      "url": "https://www.gamerpower.com/api/giveaways",
+      "category": "entertainment",
+      "documentation": "https://www.gamerpower.com/api-read",
+      "example": "https://www.gamerpower.com/api/giveaways?platform=steam",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Imgflip Memes",
+      "description": "Popular meme templates",
+      "url": "https://api.imgflip.com/get_memes",
+      "category": "media",
+      "documentation": "https://imgflip.com/api",
+      "example": "https://api.imgflip.com/get_memes",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Magic The Gathering",
+      "description": "MTG cards and sets data",
+      "url": "https://api.magicthegathering.io/v1/sets",
+      "category": "entertainment",
+      "documentation": "https://docs.magicthegathering.io/",
+      "example": "https://api.magicthegathering.io/v1/sets",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Geocode.xyz",
+      "description": "Forward and reverse geocoding",
+      "url": "https://geocode.xyz",
+      "category": "utility",
+      "documentation": "https://geocode.xyz/api",
+      "example": "https://geocode.xyz/51.50354,-0.12768?geoit=json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "GeoJS",
+      "description": "Geolocation by IP address",
+      "url": "https://get.geojs.io/v1/ip/geo.json",
+      "category": "utility",
+      "documentation": "https://www.geojs.io/",
+      "example": "https://get.geojs.io/v1/ip/geo.json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Brazil Central Bank",
+      "description": "Brazil Central Bank economic data series",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20716/dados",
+      "category": "finance",
+      "documentation": "https://dadosabertos.bcb.gov.br/",
+      "example": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20716/dados/ultimos/10?formato=json",
+      "authRequired": false,
+      "notes": "Open government data",
+      "worksIn": [
+        "BR"
+      ]
+    },
+    {
+      "name": "Brasil API",
+      "description": "Brazil public data including holidays and CEP",
+      "url": "https://brasilapi.com.br/api",
+      "category": "government",
+      "documentation": "https://brasilapi.com.br/",
+      "example": "https://brasilapi.com.br/api/feriados/v1/2024",
+      "authRequired": false,
+      "notes": "Open data",
+      "worksIn": [
+        "BR"
+      ]
+    },
+    {
+      "name": "FBI Wanted",
+      "description": "FBI wanted persons list",
+      "url": "https://api.fbi.gov/wanted/v1/list",
+      "category": "government",
+      "documentation": "https://api.fbi.gov/docs/",
+      "example": "https://api.fbi.gov/wanted/v1/list",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "USAspending",
+      "description": "US federal government spending data",
+      "url": "https://api.usaspending.gov/api/v2",
+      "category": "government",
+      "documentation": "https://api.usaspending.gov/",
+      "example": "https://api.usaspending.gov/api/v2/references/toptier_agencies/",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "USA"
+      ]
+    },
+    {
+      "name": "Kanye Rest",
+      "description": "Random Kanye West quotes",
+      "url": "https://api.kanye.rest",
+      "category": "fun",
+      "documentation": "https://kanye.rest/",
+      "example": "https://api.kanye.rest/",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Datamuse",
+      "description": "Query words matching meaning, rhyme, and spelling",
+      "url": "https://api.datamuse.com/words",
+      "category": "education",
+      "documentation": "https://www.datamuse.com/api/",
+      "example": "https://api.datamuse.com/words?ml=ringing+in+the+ears",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "iTunes Search",
+      "description": "Search iTunes music, podcasts, and movies",
+      "url": "https://itunes.apple.com/search",
+      "category": "entertainment",
+      "documentation": "https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/",
+      "example": "https://itunes.apple.com/search?term=radiohead",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Carbon Intensity UK",
+      "description": "Carbon intensity of UK electricity grid",
+      "url": "https://api.carbonintensity.org.uk/intensity/date",
+      "category": "science",
+      "documentation": "https://carbonintensity.org.uk/",
+      "example": "https://api.carbonintensity.org.uk/intensity/date",
+      "authRequired": false,
+      "notes": "Open data",
+      "worksIn": [
+        "UK"
+      ]
+    },
+    {
+      "name": "7Timer!",
+      "description": "Weather forecasts for astronomy",
+      "url": "http://www.7timer.info/bin/api.pl",
+      "category": "weather",
+      "documentation": "http://www.7timer.info/",
+      "example": "http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "UK Bank Holidays",
+      "description": "Official UK bank holiday dates",
+      "url": "https://www.gov.uk/bank-holidays.json",
+      "category": "utility",
+      "documentation": "https://www.gov.uk/",
+      "example": "https://www.gov.uk/bank-holidays.json",
+      "authRequired": false,
+      "notes": "Open government data",
+      "worksIn": [
+        "UK"
+      ]
+    },
+    {
+      "name": "4chan API",
+      "description": "Read-only 4chan board and thread data",
+      "url": "https://a.4cdn.org",
+      "category": "entertainment",
+      "documentation": "https://github.com/4chan/4chan-API",
+      "example": "https://a.4cdn.org/boards.json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "SG Weather",
+      "description": "Real-time weather readings for Singapore",
+      "url": "https://api.data.gov.sg/v1/environment/air-temperature",
+      "category": "weather",
+      "documentation": "https://data.gov.sg/",
+      "example": "https://api.data.gov.sg/v1/environment/air-temperature",
+      "authRequired": false,
+      "notes": "Singapore open data",
+      "worksIn": [
+        "SG"
+      ]
+    },
+    {
+      "name": "OpenSenseMap",
+      "description": "Personal weather station data from senseBoxes",
+      "url": "https://api.opensensemap.org/boxes",
+      "category": "weather",
+      "documentation": "https://docs.opensensemap.org/",
+      "example": "https://api.opensensemap.org/boxes/57000b8745fd40c8196ad04c?format=json",
+      "authRequired": false,
+      "notes": "Citizen science weather",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Aviation Weather",
+      "description": "Aviation weather data including airport reports",
+      "url": "https://aviationweather.gov/api/data/airport",
+      "category": "weather",
+      "documentation": "https://www.aviationweather.gov/dataserver",
+      "example": "https://aviationweather.gov/api/data/airport?ids=KMCI",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Dawum",
+      "description": "German election poll data",
+      "url": "https://api.dawum.de",
+      "category": "government",
+      "documentation": "https://dawum.de/",
+      "example": "https://api.dawum.de/",
+      "authRequired": false,
+      "notes": "German open data",
+      "worksIn": [
+        "DE"
+      ]
+    },
+    {
+      "name": "Civix BC",
+      "description": "British Columbia law and bylaw content",
+      "url": "https://www.bclaws.gov.bc.ca/civix/search/complete/fullsearch",
+      "category": "government",
+      "documentation": "https://www.bclaws.gov.bc.ca/",
+      "example": "https://www.bclaws.gov.bc.ca/civix/search/complete/fullsearch?q=water",
+      "authRequired": false,
+      "notes": "Canadian law data",
+      "worksIn": [
+        "CA"
+      ]
+    },
+    {
+      "name": "iRail",
+      "description": "Belgian railway data",
+      "url": "https://api.irail.be/vehicle",
+      "category": "transport",
+      "documentation": "https://docs.irail.be/",
+      "example": "https://api.irail.be/vehicle/?id=BE.NMBS.IC1832&format=json",
+      "authRequired": false,
+      "notes": "Belgian transit",
+      "worksIn": [
+        "BE"
+      ]
+    },
+    {
+      "name": "Final Space",
+      "description": "Final Space show characters and episodes",
+      "url": "https://finalspaceapi.com/api/v0",
+      "category": "entertainment",
+      "documentation": "https://finalspaceapi.com/",
+      "example": "https://finalspaceapi.com/api/v0/episode/",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "TCGdex",
+      "description": "Pokemon card data and sets",
+      "url": "https://api.tcgdex.net/v2/en/sets",
+      "category": "entertainment",
+      "documentation": "https://www.tcgdex.net/",
+      "example": "https://api.tcgdex.net/v2/en/sets",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Binary Jazz",
+      "description": "Random music genres",
+      "url": "https://binaryjazz.us/wp-json/genrenator/v1/genre",
+      "category": "entertainment",
+      "documentation": "https://binaryjazz.us/",
+      "example": "https://binaryjazz.us/wp-json/genrenator/v1/genre/",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Softwium Books",
+      "description": "Dummy JSON book data for testing",
+      "url": "https://softwium.com/api/books",
+      "category": "development",
+      "documentation": "https://softwium.com/",
+      "example": "https://softwium.com/api/books",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Represent Civic Info CA",
+      "description": "Canadian elected officials and electoral districts",
+      "url": "https://represent.opennorth.ca/representatives",
+      "category": "government",
+      "documentation": "https://represent.opennorth.ca/",
+      "example": "https://represent.opennorth.ca/representatives/?first_name=Jack",
+      "authRequired": false,
+      "notes": "Canadian civic data",
+      "worksIn": [
+        "CA"
+      ]
+    },
+    {
+      "name": "Leadsbox",
+      "description": "Business records search across countries",
+      "url": "https://leadsbox.biz",
+      "category": "data",
+      "documentation": "https://leadsbox.biz/",
+      "example": "https://leadsbox.biz/?query=lawyers+in+germany",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "PM2.5 Open Data",
+      "description": "PM2.5 environmental monitoring data",
+      "url": "https://pm25.lass-net.org/API-1.0.0/project/airbox/latest",
+      "category": "science",
+      "documentation": "https://pm25.lass-net.org/",
+      "example": "https://pm25.lass-net.org/API-1.0.0/project/airbox/latest/",
+      "authRequired": false,
+      "notes": "Environmental open data",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Berlin Transport",
+      "description": "Public transport data for Berlin and Brandenburg",
+      "url": "https://v6.vbb.transport.rest/locations",
+      "category": "transport",
+      "documentation": "https://v6.vbb.transport.rest/",
+      "example": "https://v6.vbb.transport.rest/locations?query=berlin",
+      "authRequired": false,
+      "notes": "German transit open data",
+      "worksIn": [
+        "DE"
+      ]
+    },
+    {
+      "name": "Barter.vg",
+      "description": "Digital game libraries and wishlists",
+      "url": "https://barter.vg/browse/cards/json",
+      "category": "entertainment",
+      "documentation": "https://barter.vg/",
+      "example": "https://barter.vg/browse/cards/json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Asterank",
+      "description": "Asteroid and minor planet data",
+      "url": "http://www.asterank.com/api/skymorph/search",
+      "category": "science",
+      "documentation": "http://www.asterank.com/",
+      "example": "http://www.asterank.com/api/skymorph/search?target=J99TS7A",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Newton Math",
+      "description": "Advanced math operations (factor, integrate, derive)",
+      "url": "https://newton.now.sh/api/v2/factor",
+      "category": "education",
+      "documentation": "https://newton.now.sh/",
+      "example": "https://newton.now.sh/api/v2/factor/x^2-1",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "TheSpaceDevs",
+      "description": "Rocket launches, space events, and agencies data",
+      "url": "https://ll.thespacedevs.com/2.2.0/agencies",
+      "category": "science",
+      "documentation": "https://thespacedevs.com/",
+      "example": "https://ll.thespacedevs.com/2.2.0/agencies/?limit=10",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Ergast F1",
+      "description": "Formula One motor racing historical data",
+      "url": "http://ergast.com/api/f1/drivers.json",
+      "category": "sports",
+      "documentation": "http://ergast.com/mrd/",
+      "example": "http://ergast.com/api/f1/drivers.json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "NHL API",
+      "description": "NHL hockey league standings and stats",
+      "url": "https://api-web.nhle.com/v1/standings-season",
+      "category": "sports",
+      "documentation": "https://api-web.nhle.com/",
+      "example": "https://api-web.nhle.com/v1/standings-season",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Charles Proxy",
+      "description": "Get IP, User-Agent, and request info",
+      "url": "http://httpbin.org/get",
+      "category": "development",
+      "documentation": "https://httpbin.org/",
+      "example": "http://httpbin.org/get",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Google Favicons",
+      "description": "Fetch website favicons via Google",
+      "url": "https://www.google.com/s2/favicons",
+      "category": "utility",
+      "documentation": "https://www.google.com/",
+      "example": "https://www.google.com/s2/favicons?domain=github.com&sz=32",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "EU VIES VAT",
+      "description": "EU VAT number validation",
+      "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/DE/vat",
+      "category": "finance",
+      "documentation": "https://ec.europa.eu/taxation_customs/vies/",
+      "example": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/DE/vat/122268496",
+      "authRequired": false,
+      "notes": "EU open data",
+      "worksIn": [
+        "EU"
+      ]
+    },
+    {
+      "name": "UK Food Ratings",
+      "description": "UK restaurant food hygiene ratings",
+      "url": "https://ratings.food.gov.uk/OpenDataFiles/FHRS529en-GB.json",
+      "category": "food",
+      "documentation": "https://ratings.food.gov.uk/",
+      "example": "https://ratings.food.gov.uk/OpenDataFiles/FHRS529en-GB.json",
+      "authRequired": false,
+      "notes": "UK open data",
+      "worksIn": [
+        "UK"
+      ]
+    },
+    {
+      "name": "Makeup API",
+      "description": "Makeup brands and product info",
+      "url": "http://makeup-api.herokuapp.com/api/v1/products.json",
+      "category": "health",
+      "documentation": "http://makeup-api.herokuapp.com/",
+      "example": "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Chinese Text Project",
+      "description": "Pre-modern Chinese texts dictionary",
+      "url": "https://api.ctext.org/getdictionaryheadwords",
+      "category": "education",
+      "documentation": "https://ctext.org/",
+      "example": "https://api.ctext.org/getdictionaryheadwords",
+      "authRequired": false,
+      "notes": "Open Chinese text",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Wayback Machine",
+      "description": "Internet Archive availability API",
+      "url": "https://archive.org/wayback/available",
+      "category": "utility",
+      "documentation": "https://archive.org/help/wayback_api.php",
+      "example": "https://archive.org/wayback/available?url=google.com",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "ISS Location",
+      "description": "Real-time International Space Station location",
+      "url": "http://api.open-notify.org/iss-now.json",
+      "category": "science",
+      "documentation": "http://open-notify.org/Open-Notify-API/ISS-Location-API/",
+      "example": "http://api.open-notify.org/iss-now.json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "PHP-Noise",
+      "description": "Noise background image generator",
+      "url": "https://php-noise.com/noise.php",
+      "category": "media",
+      "documentation": "https://php-noise.com/",
+      "example": "https://php-noise.com/noise.php?hex=FFFFFF&json",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "ReSmush",
+      "description": "Image compression and optimization API",
+      "url": "http://api.resmush.it/ws.php",
+      "category": "utility",
+      "documentation": "https://resmush.it/",
+      "example": "http://api.resmush.it/ws.php?img=http://www.resmush.it/assets/images/jpg_example_original.jpg&qlty=95",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "The Rosary",
+      "description": "Daily rosary prayers",
+      "url": "https://the-rosary-api.vercel.app/v1/today",
+      "category": "education",
+      "documentation": "https://the-rosary-api.vercel.app/",
+      "example": "https://the-rosary-api.vercel.app/v1/today",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "global"
+      ]
+    },
+    {
+      "name": "Ceska Televize",
+      "description": "Czech television program schedule",
+      "url": "https://www.ceskatelevize.cz/services-old/programme/xml/schedule.php",
+      "category": "entertainment",
+      "documentation": "https://www.ceskatelevize.cz/",
+      "example": "https://www.ceskatelevize.cz/services-old/programme/xml/schedule.php?user=test&date=30.01.2024&channel=ct2",
+      "authRequired": false,
+      "notes": "No auth needed",
+      "worksIn": [
+        "CZ"
+      ]
+    },
+    {
+      "name": "NPS API",
+      "description": "US National Park Service data (parks, alerts, events)",
+      "url": "https://developer.nps.gov/api/v1/parks",
+      "category": "government",
+      "documentation": "https://www.nps.gov/subjects/developer/index.htm",
+      "example": "https://developer.nps.gov/api/v1/parks?limit=1",
+      "authRequired": false,
+      "notes": "No auth needed for limited data",
+      "worksIn": [
+        "USA"
+      ]
+    }
+  ]
+}

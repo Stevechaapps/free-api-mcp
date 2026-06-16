@@ -1,0 +1,32 @@
+{
+  "name": "free-api-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for 305 free APIs — zero auth required. Weather, finance, AI, government data & more, as AI-accessible tools.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "free-api-mcp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "api-data.json"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "free-api",
+    "no-auth",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "api"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
