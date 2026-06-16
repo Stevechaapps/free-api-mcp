@@ -29,6 +29,26 @@ Weather forecasts, currency exchange rates, crypto prices, government data, AI/M
 
 Restart Claude Desktop and the tools are available immediately.
 
+### Docker
+
+```bash
+docker build -t free-api-mcp .
+docker run --rm -i free-api-mcp
+```
+
+For use with Claude Desktop:
+
+```json
+{
+  "mcpServers": {
+    "free-api": {
+      "command": "docker",
+      "args": ["run", "--rm", "-i", "free-api-mcp"]
+    }
+  }
+}
+```
+
 ### Cursor
 
 ```
@@ -160,10 +180,10 @@ node --check lib/cache.js
 - [x] In-memory caching with TTL
 - [x] Exact + fuzzy API matching
 - [x] CI pipeline
-- [ ] Resource exposure for static API data
-- [ ] JSON validation with Zod
+- [x] Resource exposure for static API data
+- [x] JSON validation with Zod
+- [x] Docker support
 - [ ] Streaming transport support
-- [ ] Docker support
 
 
 ## Support
