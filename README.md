@@ -1,6 +1,5 @@
 # Free API MCP Server
 
-[![npm](https://img.shields.io/npm/v/free-api-mcp?style=flat-square&logo=npm)](https://www.npmjs.com/package/free-api-mcp)
 [![GitHub Stars](https://img.shields.io/github/stars/Stevechaapps/free-api-mcp?style=flat-square&logo=github)](https://github.com/Stevechaapps/free-api-mcp/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
@@ -12,7 +11,7 @@ Weather forecasts, currency exchange rates, crypto prices, government data, AI/M
 
 ## Quick Start
 
-### npx (no install)
+### npx (from GitHub)
 
 ```json
 // claude_desktop_config.json
@@ -20,7 +19,7 @@ Weather forecasts, currency exchange rates, crypto prices, government data, AI/M
   "mcpServers": {
     "free-api": {
       "command": "npx",
-      "args": ["-y", "free-api-mcp"]
+      "args": ["-y", "github:Stevechaapps/free-api-mcp"]
     }
   }
 }
@@ -34,7 +33,7 @@ Restart Claude Desktop and the tools are available immediately.
 Cursor → Settings → Features → MCP Servers → Add New
 Name: free-api
 Type: command
-Command: npx -y free-api-mcp
+Command: npx -y github:Stevechaapps/free-api-mcp
 ```
 
 ### VS Code + Continue
@@ -46,7 +45,7 @@ Command: npx -y free-api-mcp
     "free-api": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "free-api-mcp"]
+      "args": ["-y", "github:Stevechaapps/free-api-mcp"]
     }
   }
 }
