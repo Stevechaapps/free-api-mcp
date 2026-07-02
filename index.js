@@ -68,9 +68,13 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     }
 
     const params = parsed.data.params ?? {};
-    const url = new URL(api.url);
+    let baseUrl = api.url;
+    if (params.path && typeof params.path === 'string') {
+      baseUrl = baseUrl.replace(/\/+$/, '') + '/' + params.path.replace(/^\/+/, '');
+    }
+    const url = new URL(baseUrl);
     Object.entries(params).forEach(([key, value]) => {
-      if (typeof key === 'string') {
+      if (typeof key === 'string' && key !== 'path') {
         url.searchParams.set(key, String(value ?? ''));
       }
     });
@@ -87,7 +91,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     log('Fetching API', { url: cacheKey });
     try {
       const response = await fetch(url.toString(), {
-        headers: { 'User-Agent': 'free-api-mcp/1.0' },
+        headers: { 'User-Agent': 'free-api-mcp/1.0', 'Accept': 'application/json' },
         signal: AbortSignal.timeout(15000)
       });
 

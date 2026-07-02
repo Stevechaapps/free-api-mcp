@@ -29,7 +29,7 @@
     {
       "name": "Frankfurter Currency Exchange",
       "description": "Free foreign exchange rates API based on the European Central Bank data. No authentication required.",
-      "url": "https://api.frankfurter.app",
+      "url": "https://api.frankfurter.app/latest",
       "category": "finance",
       "documentation": "https://www.frankfurter.app/",
       "example": "https://api.frankfurter.app/latest?from=USD&to=EUR",
@@ -68,7 +68,7 @@
     {
       "name": "User Agent String",
       "description": "Parse and get information about user agent strings. Free API for detecting browser, OS, device info.",
-      "url": "http://www.useragentstring.com/pages/useragentstring.php",
+      "url": "http://www.useragentstring.com/",
       "category": "developer",
       "documentation": "http://www.useragentstring.com/",
       "example": "http://www.useragentstring.com/?uas=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36&getJSON=all",
@@ -81,7 +81,7 @@
     {
       "name": "Date.nager.at Holidays",
       "description": "API for public holidays, bank holidays, and school holidays for many countries. No authentication required.",
-      "url": "https://date.nager.at/api/v3",
+      "url": "https://date.nager.at/api/v3/PublicHolidays",
       "category": "date",
       "documentation": "https://date.nager.at/",
       "example": "https://date.nager.at/api/v3/PublicHolidays/2026/US",
@@ -94,7 +94,7 @@
     {
       "name": "JSONPlaceholder",
       "description": "Free fake REST API for testing and prototyping. Provides endpoints for posts, comments, albums, photos, todos, users.",
-      "url": "https://jsonplaceholder.typicode.com",
+      "url": "https://jsonplaceholder.typicode.com/posts",
       "category": "development",
       "documentation": "https://jsonplaceholder.typicode.com/",
       "example": "https://jsonplaceholder.typicode.com/posts/1",
@@ -120,7 +120,7 @@
     {
       "name": "Dog CEO",
       "description": "API for random dog images. Free, no authentication required.",
-      "url": "https://dog.ceo/dog-api/",
+      "url": "https://dog.ceo/api/breeds/image/random",
       "category": "fun",
       "documentation": "https://dog.ceo/dog-api/",
       "example": "https://dog.ceo/api/breeds/image/random",
@@ -133,7 +133,7 @@
     {
       "name": "Advice Slip",
       "description": "Free API for getting random advice slips. No authentication required.",
-      "url": "https://api.adviceslip.com",
+      "url": "https://api.adviceslip.com/advice",
       "category": "fun",
       "documentation": "https://api.adviceslip.com/",
       "example": "https://api.adviceslip.com/advice",
@@ -159,7 +159,7 @@
     {
       "name": "App Brewery Mocktail",
       "description": "Free API for cocktail recipes and drink information. No authentication required.",
-      "url": "https://www.thecocktaildb.com/api.php",
+      "url": "https://www.thecocktaildb.com/api/json/v1/1/search.php",
       "category": "food",
       "documentation": "https://www.thecocktaildb.com/api.php",
       "example": "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita",
@@ -172,7 +172,7 @@
     {
       "name": "CoinGecko",
       "description": "Comprehensive cryptocurrency data including prices, market cap, and volume.",
-      "url": "https://api.coingecko.com/api/v3",
+      "url": "https://api.coingecko.com/api/v3/simple/price",
       "category": "finance",
       "documentation": "https://www.coingecko.com/en/api/documentation",
       "example": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd",
@@ -185,7 +185,7 @@
     {
       "name": "Coinlore",
       "description": "Cryptocurrency prices, volume and more",
-      "url": "https://www.coinlore.com/cryptocurrency-data-api",
+      "url": "https://api.coinlore.com/api/price/",
       "category": "finance",
       "documentation": "https://www.coinlore.com/cryptocurrency-data-api",
       "example": "https://api.coinlore.com/api/price/?id=90",
@@ -198,7 +198,7 @@
     {
       "name": "Coinpaprika",
       "description": "Cryptocurrency prices, volume and more",
-      "url": "https://api.coinpaprika.com",
+      "url": "https://api.coinpaprika.com/v1/coins",
       "category": "finance",
       "documentation": "https://api.coinpaprika.com",
       "example": "https://api.coinpaprika.com/v1/coins",
@@ -211,7 +211,7 @@
     {
       "name": "PokeAPI",
       "description": "All the Pokemon data you'll ever need.",
-      "url": "https://pokeapi.co/api/v2",
+      "url": "https://pokeapi.co/api/v2/pokemon",
       "category": "fun",
       "documentation": "https://pokeapi.co/",
       "example": "https://pokeapi.co/api/v2/pokemon/ditto",
@@ -224,7 +224,7 @@
     {
       "name": "REST Countries",
       "description": "Get information about countries, regions, and cities.",
-      "url": "https://restcountries.com/v3.1",
+      "url": "https://restcountries.com/v3.1/name",
       "category": "data",
       "documentation": "https://restcountries.com/",
       "example": "https://restcountries.com/v3.1/name/usa",
@@ -237,7 +237,7 @@
     {
       "name": "The Joke API",
       "description": "Programmer jokes and general jokes.",
-      "url": "https://v2.jokeapi.dev",
+      "url": "https://v2.jokeapi.dev/joke",
       "category": "fun",
       "documentation": "https://sv443.net/jokeapi/v2/",
       "example": "https://v2.jokeapi.dev/joke/Programming?type=single",
@@ -263,7 +263,7 @@
     {
       "name": "Open Library API",
       "description": "Open and free library of books",
-      "url": "https://openlibrary.org",
+      "url": "https://openlibrary.org/works",
       "category": "books",
       "documentation": "https://openlibrary.org/dev/docs/api",
       "example": "https://openlibrary.org/works/OL12345W.json",
@@ -276,7 +276,7 @@
     {
       "name": "Rick and Morty API",
       "description": "Data from the Rick and Morty TV show",
-      "url": "https://rickandmortyapi.com/api",
+      "url": "https://rickandmortyapi.com/api/character",
       "category": "entertainment",
       "documentation": "https://rickandmortyapi.com/documentation",
       "example": "https://rickandmortyapi.com/api/character/1",
@@ -289,7 +289,7 @@
     {
       "name": "NASA Open APIs",
       "description": "Space and planetary data",
-      "url": "https://api.nasa.gov",
+      "url": "https://api.nasa.gov/planetary/apod",
       "category": "space",
       "documentation": "https://api.nasa.gov/",
       "example": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
@@ -367,7 +367,7 @@
     {
       "name": "Jikan API",
       "description": "Unofficial MyAnimeList API",
-      "url": "https://api.jikan.moe/v4",
+      "url": "https://api.jikan.moe/v4/anime",
       "category": "entertainment",
       "documentation": "https://jikan.moe/docs",
       "example": "https://api.jikan.moe/v4/anime/1",
@@ -406,7 +406,7 @@
     {
       "name": "openFDA",
       "description": "Publicly available data from the US FDA regarding drugs, devices, and food recalls.",
-      "url": "https://api.fda.gov",
+      "url": "https://api.fda.gov/drug/label.json",
       "category": "health",
       "documentation": "https://open.fda.gov/apis/",
       "example": "https://api.fda.gov/drug/label.json",
@@ -549,7 +549,7 @@
     {
       "name": "AnimeNewsNetwork",
       "description": "Anime industry news",
-      "url": "https://www.animenewsnetwork.com/encyclopedia/api.php",
+      "url": "https://cdn.animenewsnetwork.com/encyclopedia/api.xml",
       "category": "entertainment",
       "documentation": "https://www.animenewsnetwork.com/encyclopedia/api.php",
       "example": "https://cdn.myanimelist.net/xml/animelist.xml",
@@ -588,7 +588,7 @@
     {
       "name": "Metropolitan Museum of Art",
       "description": "Art from the Met collection",
-      "url": "https://metmuseum.github.io/",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects",
       "category": "art",
       "documentation": "https://metmuseum.github.io/",
       "example": "https://collectionapi.metmuseum.org/public/collection/v1/objects/1",
@@ -601,7 +601,7 @@
     {
       "name": "Harry Potter API",
       "description": "API to get data from Harry Potter books, movies, characters and spells",
-      "url": "https://github.com/fedeperin/potterapi",
+      "url": "https://potterapi-fedeperin.vercel.app/en/characters",
       "category": "entertainment",
       "documentation": "https://github.com/fedeperin/potterapi",
       "example": "https://potterapi-fedeperin.vercel.app/en/characters",
@@ -682,7 +682,7 @@
     {
       "name": "Blockchain",
       "description": "Bitcoin Payment, Wallet & Transaction Data",
-      "url": "https://www.blockchain.info/api",
+      "url": "https://blockchain.info/latestblock",
       "category": "finance",
       "documentation": "https://www.blockchain.info/api",
       "example": "https://blockchain.info/ticker",
@@ -1033,7 +1033,7 @@
     {
       "name": "Statistics of the World",
       "description": "Statistical data from around the world",
-      "url": "https://statisticsoftheworld.com",
+      "url": "https://statisticsoftheworld.com/api/v1/country/all",
       "category": "data",
       "documentation": "https://statisticsoftheworld.com/api-docs",
       "example": "https://statisticsoftheworld.com/api/v1/country/all",
@@ -1215,7 +1215,7 @@
     {
       "name": "Archive.org",
       "description": "Digital library of internet artifacts",
-      "url": "https://archive.org",
+      "url": "https://archive.org/advancedsearch.php",
       "category": "data",
       "documentation": "https://archive.readme.io/docs",
       "example": "https://archive.org/advancedsearch.php?q=apple&output=json",
@@ -1228,7 +1228,7 @@
     {
       "name": "RandomUser",
       "description": "Generate random user data for testing",
-      "url": "https://randomuser.me",
+      "url": "https://randomuser.me/api",
       "category": "development",
       "documentation": "https://randomuser.me",
       "example": "https://randomuser.me/api/",
@@ -1267,7 +1267,7 @@
     {
       "name": "Sunrise and Sunset",
       "description": "Sunrise and sunset times for any location",
-      "url": "https://sunrise-sunset.org/api",
+      "url": "https://api.sunrise-sunset.org/json",
       "category": "science",
       "documentation": "https://sunrise-sunset.org/api",
       "example": "https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400",
@@ -1333,7 +1333,7 @@
     {
       "name": "Swiss Public Transport",
       "description": "Swiss public transportation schedules",
-      "url": "https://transport.opendata.ch/",
+      "url": "https://transport.opendata.ch/v1/connections",
       "category": "transportation",
       "documentation": "https://transport.opendata.ch/",
       "example": "https://transport.opendata.ch/v1/connections?from=Lausanne&to=Geneva",
@@ -1359,7 +1359,7 @@
     {
       "name": "Ron Swanson Quotes",
       "description": "Random Ron Swanson quotes from Parks and Recreation",
-      "url": "https://github.com/jamesseanwright/ron-swanson-quotes",
+      "url": "https://ron-swanson-quotes.herokuapp.com/v2/quotes",
       "category": "entertainment",
       "documentation": "https://github.com/jamesseanwright/ron-swanson-quotes",
       "example": "https://ron-swanson-quotes.herokuapp.com/v2/quotes",
@@ -1385,7 +1385,7 @@
     {
       "name": "Owen Wilson Wow",
       "description": "API for actor Owen Wilson's wow exclamations in movies",
-      "url": "https://owen-wilson-wow-api.onrender.com/",
+      "url": "https://owen-wilson-wow-api.onrender.com/v1/random",
       "category": "entertainment",
       "documentation": "https://owen-wilson-wow-api.onrender.com/",
       "example": "https://owen-wilson-wow-api.onrender.com/v1/random",
@@ -1463,7 +1463,7 @@
     {
       "name": "HackerNews",
       "description": "Hacker News stories and comments",
-      "url": "https://github.com/HackerNews/API",
+      "url": "https://hacker-news.firebaseio.com/v0/topstories.json",
       "category": "news",
       "documentation": "https://github.com/HackerNews/API",
       "example": "https://hacker-news.firebaseio.com/v0/topstories.json",
@@ -1476,7 +1476,7 @@
     {
       "name": "Bacon Ipsum",
       "description": "Bacon-flavored Lorem Ipsum generator",
-      "url": "https://baconipsum.com/json-api/",
+      "url": "https://baconipsum.com/api/",
       "category": "development",
       "documentation": "https://baconipsum.com/json-api/",
       "example": "https://baconipsum.com/api/?type=all-meat&paras=3",
@@ -1489,7 +1489,7 @@
     {
       "name": "Meme API",
       "description": "Random memes from Reddit",
-      "url": "https://github.com/D3vd/Meme_Api",
+      "url": "https://meme-api.com/gimme",
       "category": "fun",
       "documentation": "https://github.com/D3vd/Meme_Api",
       "example": "https://meme-api.com/gimme",
@@ -1502,7 +1502,7 @@
     {
       "name": "USGS Water Services",
       "description": "US water quality and availability data",
-      "url": "https://waterservices.usgs.gov/",
+      "url": "https://waterservices.usgs.gov/nwis/iv/",
       "category": "environment",
       "documentation": "https://waterservices.usgs.gov/",
       "example": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=02319000",
@@ -1580,7 +1580,7 @@
     {
       "name": "Wikipedia API",
       "description": "Wikipedia articles and data",
-      "url": "https://www.mediawiki.org/wiki/API:Main_page",
+      "url": "https://en.wikipedia.org/api/rest_v1/page/summary",
       "category": "data",
       "documentation": "https://www.mediawiki.org/wiki/API:Main_page",
       "example": "https://en.wikipedia.org/api/rest_v1/page/summary/OpenAI",
@@ -1606,7 +1606,7 @@
     {
       "name": "OkSurf",
       "description": "News sentiment and analysis",
-      "url": "https://ok.surf/",
+      "url": "https://ok.surf/api/news",
       "category": "news",
       "documentation": "https://ok.surf/",
       "example": "https://ok.surf/api/news",
@@ -1788,7 +1788,7 @@
     {
       "name": "AmiiboAPI",
       "description": "Nintendo Amiibo figures data",
-      "url": "http://www.amiiboapi.com/",
+      "url": "http://www.amiiboapi.com/api/amiibo/",
       "category": "games",
       "documentation": "http://www.amiiboapi.com/",
       "example": "http://www.amiiboapi.com/api/amiibo/?name=mario",
@@ -1814,7 +1814,7 @@
     {
       "name": "Final Fantasy XIV",
       "description": "FFXIV game data, items, characters",
-      "url": "https://xivapi.com/",
+      "url": "https://xivapi.com/item",
       "category": "games",
       "documentation": "https://xivapi.com/",
       "example": "https://xivapi.com/item/1",
@@ -1853,7 +1853,7 @@
     {
       "name": "Scryfall",
       "description": "Magic: The Gathering card search",
-      "url": "https://scryfall.com/docs/api",
+      "url": "https://api.scryfall.com/cards/search",
       "category": "games",
       "documentation": "https://scryfall.com/docs/api",
       "example": "https://api.scryfall.com/cards/search?q=combo",
@@ -1866,7 +1866,7 @@
     {
       "name": "xkcd",
       "description": "xkcd comics JSON API",
-      "url": "https://xkcd.com/json.html",
+      "url": "https://xkcd.com/info.0.json",
       "category": "fun",
       "documentation": "https://xkcd.com/json.html",
       "example": "https://xkcd.com/info.0.json",
@@ -1879,7 +1879,7 @@
     {
       "name": "Bologna Open Data",
       "description": "Italian city of Bologna open data",
-      "url": "https://dati.comune.bologna.it/",
+      "url": "https://dati.comune.bologna.it/api/3/action/package_list",
       "category": "government",
       "documentation": "https://dati.comune.bologna.it/api/3/action/package_list",
       "example": "https://dati.comune.bologna.it/api/3/action/package_list",
@@ -1918,7 +1918,7 @@
     {
       "name": "FishFish",
       "description": "Security and threat intelligence",
-      "url": "https://fishfish.gg/",
+      "url": "https://fishfish.gg/api/v1/lookup",
       "category": "security",
       "documentation": "https://fishfish.gg/docs",
       "example": "https://fishfish.gg/api/v1/lookup?domain=google.com",
@@ -1931,7 +1931,7 @@
     {
       "name": "National Vulnerability Database",
       "description": "US NIST vulnerability database",
-      "url": "https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
       "category": "security",
       "documentation": "https://nvd.nist.gov/developers",
       "example": "https://services.nvd.nist.gov/rest/json/cves/2.0",
@@ -1944,7 +1944,7 @@
     {
       "name": "UK Police Data",
       "description": "UK police data and crime statistics",
-      "url": "https://data.police.uk/docs/",
+      "url": "https://data.police.uk/api/crimes-street/all-crime",
       "category": "security",
       "documentation": "https://data.police.uk/docs/",
       "example": "https://data.police.uk/api/crimes-street/all-crime?lat=52.629729&lng=-1.138592",
@@ -1957,7 +1957,7 @@
     {
       "name": "Let's Count",
       "description": "Counter and analytics API",
-      "url": "https://letscountapi.com/",
+      "url": "https://letscountapi.com/counter/visits",
       "category": "development",
       "documentation": "https://letscountapi.com/",
       "example": "https://letscountapi.com/counter/visits",
@@ -1996,7 +1996,7 @@
     {
       "name": "NextBus",
       "description": "Multi-agency transit predictions",
-      "url": "http://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf",
+      "url": "http://webservices.nextbus.com/service/publicXMLFeed",
       "category": "transportation",
       "documentation": "http://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf",
       "example": "http://webservices.nextbus.com/service/publicXMLFeed?command=agencyList",
@@ -2217,7 +2217,7 @@
     {
       "name": "HTTPBin",
       "description": "Free HTTP request and response debugging service. See exactly what your HTTP client sends - headers, IP, form data, JSON, and more. No API key needed.",
-      "url": "https://httpbin.org",
+      "url": "https://httpbin.org/get",
       "category": "developer-tools",
       "documentation": "https://httpbin.org/",
       "example": "https://httpbin.org/get",
@@ -2256,7 +2256,7 @@
     {
       "name": "npm Registry",
       "description": "Free API to query the npm package registry. Get package metadata, versions, dependencies, downloads, and maintainers. No API key needed.",
-      "url": "https://registry.npmjs.org/",
+      "url": "https://registry.npmjs.org/express/latest",
       "category": "developer-tools",
       "documentation": "https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md",
       "example": "https://registry.npmjs.org/express/latest",
@@ -2347,7 +2347,7 @@
     {
       "name": "Fake Store API",
       "description": "Fake online store for testing e-commerce",
-      "url": "https://fakestoreapi.com",
+      "url": "https://fakestoreapi.com/products",
       "category": "development",
       "documentation": "https://fakestoreapi.com/",
       "example": "https://fakestoreapi.com/products",
@@ -2360,7 +2360,7 @@
     {
       "name": "DummyJSON",
       "description": "Fake online store and user data for testing",
-      "url": "https://dummyjson.com",
+      "url": "https://dummyjson.com/products",
       "category": "development",
       "documentation": "https://dummyjson.com/",
       "example": "https://dummyjson.com/products",
@@ -2451,7 +2451,7 @@
     {
       "name": "Kitsu API",
       "description": "Anime and manga database",
-      "url": "https://kitsu.io/api/edge",
+      "url": "https://kitsu.io/api/edge/anime",
       "category": "entertainment",
       "documentation": "https://kitsu.docs.apiary.io/",
       "example": "https://kitsu.io/api/edge/anime",
@@ -2477,7 +2477,7 @@
     {
       "name": "Disease.sh",
       "description": "COVID-19 and disease tracking data",
-      "url": "https://disease.sh/v3",
+      "url": "https://disease.sh/v3/covid-19/all",
       "category": "health",
       "documentation": "https://disease.sh/docs/",
       "example": "https://disease.sh/v3/covid-19/all",
@@ -2503,7 +2503,7 @@
     {
       "name": "Faker API",
       "description": "Random fake data generator",
-      "url": "https://fakerapi.it/api/v1",
+      "url": "https://fakerapi.it/api/v1/companies",
       "category": "development",
       "documentation": "https://fakerapi.it/",
       "example": "https://fakerapi.it/api/v1/companies?_quantity=1",
@@ -2529,7 +2529,7 @@
     {
       "name": "MBTA API",
       "description": "Massachusetts Bay Transit data",
-      "url": "https://api-v3.mbta.com",
+      "url": "https://api-v3.mbta.com/routes",
       "category": "transport",
       "documentation": "https://www.mbta.com/developers",
       "example": "https://api-v3.mbta.com/routes",
@@ -2854,7 +2854,7 @@
     {
       "name": "Lobsters",
       "description": "Lobste.rs tech news",
-      "url": "https://lobste.rs",
+      "url": "https://lobste.rs/hottest.json",
       "category": "news",
       "documentation": "https://lobste.rs/about#api",
       "example": "https://lobste.rs/hottest.json",
@@ -3075,7 +3075,7 @@
     {
       "name": "Crossref",
       "description": "Scholarly metadata and DOI lookup",
-      "url": "https://api.crossref.org",
+      "url": "https://api.crossref.org/journals",
       "category": "academic",
       "documentation": "https://api.crossref.org/",
       "example": "https://api.crossref.org/journals?query=pharmacy+health",
@@ -3530,7 +3530,7 @@
     {
       "name": "4chan API",
       "description": "Read-only 4chan board and thread data",
-      "url": "https://a.4cdn.org",
+      "url": "https://a.4cdn.org/boards.json",
       "category": "entertainment",
       "documentation": "https://github.com/4chan/4chan-API",
       "example": "https://a.4cdn.org/boards.json",
